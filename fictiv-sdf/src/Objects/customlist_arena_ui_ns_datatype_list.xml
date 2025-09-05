@@ -1,0 +1,44 @@
+<customlist scriptid="customlist_arena_ui_ns_datatype_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>F</isordered>
+  <name>Netsuite Datatypes</name>
+  <customvalues>
+    <customvalue scriptid="val_98011_t2228999_870">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Checkbox</value>
+    </customvalue>
+    <customvalue scriptid="val_98015_t2228999_978">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Currency</value>
+    </customvalue>
+    <customvalue scriptid="val_98014_t2228999_898">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Date</value>
+    </customvalue>
+    <customvalue scriptid="val_98016_t2228999_427">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Date/Time</value>
+    </customvalue>
+    <customvalue scriptid="val_98013_t2228999_891">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Freetext</value>
+    </customvalue>
+    <customvalue scriptid="val_98017_t2228999_881">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Multiple Select</value>
+    </customvalue>
+    <customvalue scriptid="val_98012_t2228999_995">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Select</value>
+    </customvalue>
+  </customvalues>
+</customlist>

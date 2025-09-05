@@ -1,0 +1,49 @@
+<centercategory scriptid="custcentercategory_arena_setup">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_arena_integration_tab]</centertab>
+  <label>Setup / Configure Integration</label>
+  <links>
+    <link>
+      <linklabel>Sync &amp; Select Arena Categories</linklabel>
+      <linkobject>[scriptid=customscript_arena_setup_list_sui.customdeploy_arena_setup_list_cat_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Sync &amp; Select Arena Lifecycles</linklabel>
+      <linkobject>[scriptid=customscript_arena_setup_list_sui.customdeploy_arena_setup_list_lf_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Standard Mapping Configuration</linklabel>
+      <linkobject>[scriptid=customscript_arena_stdmap_list_sui.customdeploy_arena_stdmap_list_sui]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Reverse Integration Configuration</linklabel>
+      <linkobject>[scriptid=customrecord_arena_reverse_integ_config]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>AdvBOMs Mapping Configuration</linklabel>
+      <linkobject>[scriptid=customscript_arena_advbom_uimap__sui.customdeploy_arena_advbom_uimap_sui]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Reverse Integration Mapping</linklabel>
+      <linkobject>[scriptid=customrecord_arena_rev_integ_mapping]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Arena Credentials Configuration</linklabel>
+      <linkobject>[scriptid=customscript_arena_cred_form_sui.customdeploy_arena_cred_form_sui_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

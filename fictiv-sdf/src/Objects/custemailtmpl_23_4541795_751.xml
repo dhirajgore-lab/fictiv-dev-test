@@ -1,0 +1,12 @@
+<emailtemplate scriptid="custemailtmpl_23_4541795_751">
+  <addcompanyaddress>T</addcompanyaddress>
+  <addunsubscribelink>T</addunsubscribelink>
+  <description></description>
+  <isinactive>F</isinactive>
+  <isprivate>F</isprivate>
+  <mediaitem></mediaitem>
+  <name>5 Days Before Overdue</name>
+  <recordtype>CUSTOM</recordtype>
+  <subject>Near Due Date Notice ${customer.companyName}</subject>
+  <usesmedia>F</usesmedia>
+</emailtemplate>

@@ -1,0 +1,46 @@
+<clientscript scriptid="customscript_f3_ava_testing">
+  <description></description>
+  <fieldchangedfunction>AVA_TransactionFieldChange</fieldchangedfunction>
+  <isinactive>T</isinactive>
+  <lineinitfunction></lineinitfunction>
+  <name>F3 AVA Testing</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <pageinitfunction>AVA_TransactionInit</pageinitfunction>
+  <postsourcingfunction>AVA_TransactionPostSourcing</postsourcingfunction>
+  <recalcfunction>AVA_RecalculateLine</recalcfunction>
+  <saverecordfunction>AVA_TransactionSave</saverecordfunction>
+  <scriptfile>[/SuiteScripts/F3_AVA_Functions.js]</scriptfile>
+  <validatedeletefunction></validatedeletefunction>
+  <validatefieldfunction></validatefieldfunction>
+  <validateinsertfunction></validateinsertfunction>
+  <validatelinefunction></validatelinefunction>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_ava_testing">
+      <allemployees>T</allemployees>
+      <alllocalizationcontexts>T</alllocalizationcontexts>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole>CUSTOMER_CENTER|EMPLOYEE_CENTER|NETSUITE_SUPPORT_CENTER|NETSUITE_SUPPORT_CENTER__BASIC|ONLINE_FORM_USER|PARTNER_CENTER|VENDOR_CENTER</audslctrole>
+      <eventtype></eventtype>
+      <executioncontext>ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RECORDACTION|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW</executioncontext>
+      <isdeployed>F</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>INVOICE</recordtype>
+      <status>NOTSCHEDULED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_EntityFunctions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</clientscript>

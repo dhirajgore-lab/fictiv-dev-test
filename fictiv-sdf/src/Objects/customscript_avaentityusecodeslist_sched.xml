@@ -1,0 +1,44 @@
+<scheduledscript scriptid="customscript_avaentityusecodeslist_sched">
+  <defaultfunction>AVA_GetEntityUseCodesList</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_GetEntityUseCodesList_Scheduled</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_EntityFunctions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_avaentityusecodes_deploy">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_GetEntityUseCodesList_Scheduled</title>
+      <recurrence>
+        <weekly>
+          <everyxweeks>1</everyxweeks>
+          <friday>F</friday>
+          <monday>T</monday>
+          <repeat></repeat>
+          <saturday>F</saturday>
+          <startdate>2018-12-03</startdate>
+          <starttime>14:00:00Z</starttime>
+          <sunday>F</sunday>
+          <thursday>F</thursday>
+          <tuesday>F</tuesday>
+          <wednesday>F</wednesday>
+        </weekly>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</scheduledscript>

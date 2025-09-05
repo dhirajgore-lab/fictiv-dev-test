@@ -1,0 +1,23 @@
+<sublist scriptid="custsublist_st_rev_history">
+  <assemblybuild>F</assemblybuild>
+  <customtransactions></customtransactions>
+  <deposit>F</deposit>
+  <depositapplication>F</depositapplication>
+  <expensereport>F</expensereport>
+  <field>[scriptid=custbody_st_original_order]</field>
+  <fulfillmentrequest>F</fulfillmentrequest>
+  <inventoryadjustment>F</inventoryadjustment>
+  <itemfulfillment>F</itemfulfillment>
+  <itemreceipt>F</itemreceipt>
+  <journal>F</journal>
+  <label>Rev</label>
+  <opportunity>F</opportunity>
+  <payment>F</payment>
+  <purchase>F</purchase>
+  <sale>T</sale>
+  <savedsearch>[scriptid=customsearch577549]</savedsearch>
+  <storepickup>F</storepickup>
+  <sublisttype>TRANSACTION</sublisttype>
+  <tab>[scriptid=custtab_st_revised_order]</tab>
+  <vendorpayment>F</vendorpayment>
+</sublist>

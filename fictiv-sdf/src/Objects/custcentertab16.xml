@@ -1,0 +1,32 @@
+<centertab scriptid="custcentertab16">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter1]</center>
+  <label>Prospects</label>
+  <portlets>
+    <portlet scriptid="portlet_188_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_196_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKADD</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_189_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_190_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>LIST</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

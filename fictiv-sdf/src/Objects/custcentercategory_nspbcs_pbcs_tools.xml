@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory_nspbcs_pbcs_tools">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_pbcs]</centertab>
+  <label translate="T">[scriptid=custcollection_nspb_translation.mnu_tools]</label>
+  <links>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_form_dashboard]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_report_list.customdeploy_nspbcs_sl_report_list]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_impexp_config]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_import_export.customdeploy_nspbcs_sl_import_export]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_file_browser]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_data_files.customdeploy_nspbcs_sl_data_files]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,22 @@
+<restlet scriptid="customscript_f3_fictiv_odoo_rl">
+  <description>This restlet is responsible for creating invoice/sales order from odoo, created by folio3 (sanovia)</description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo Restlet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/restlet/f3_netsuite_api_rl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeployf3_odoo_rl_dep">
+      <allemployees>T</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole>CUSTOMER_CENTER|EMPLOYEE_CENTER|NETSUITE_SUPPORT_CENTER|NETSUITE_SUPPORT_CENTER__BASIC|ONLINE_FORM_USER|PARTNER_CENTER|VENDOR_CENTER</audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>RELEASED</status>
+      <title>Fictiv Odoo Restlet</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory10_2">
+  <center>ACCOUNTCENTER</center>
+  <centertab>[scriptid=custcentertab19_2]</centertab>
+  <label>Reconciliation</label>
+  <links>
+    <link>
+      <linklabel>Entity/Use Code</linklabel>
+      <linkobject>[scriptid=customscript_avaentityuselist_suitlet.customdeploy_entityuselist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Create Batch</linklabel>
+      <linkobject>[scriptid=customscript_avareconcilelist_suitelet.customdeploy_avareconcilelist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>View Results</linklabel>
+      <linkobject>[scriptid=customscript_ava_reconciliation_suitelet.customdeploy_ava_reconcileresult]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

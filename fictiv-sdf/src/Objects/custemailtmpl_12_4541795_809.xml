@@ -1,0 +1,12 @@
+<emailtemplate scriptid="custemailtmpl_12_4541795_809">
+  <addcompanyaddress>T</addcompanyaddress>
+  <addunsubscribelink>T</addunsubscribelink>
+  <description>This is a test to create the dunning letter template</description>
+  <isinactive>F</isinactive>
+  <isprivate>F</isprivate>
+  <mediaitem></mediaitem>
+  <name>Dunning (test) Letter Template</name>
+  <recordtype>CUSTOM</recordtype>
+  <subject>Payment reminder for open receivables with Fictiv Inc.</subject>
+  <usesmedia>F</usesmedia>
+</emailtemplate>

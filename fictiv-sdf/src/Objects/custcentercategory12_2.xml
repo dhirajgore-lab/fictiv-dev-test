@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory12_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>Address Validation</label>
+  <links>
+    <link>
+      <linklabel>Quick Validate</linklabel>
+      <linkobject>[scriptid=customscript_avaquickvalidation_suitlet.customdeploy_avaquickaddressvalidation]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Validate Records</linklabel>
+      <linkobject>[scriptid=customscript_avaddressvalidation_suitlet.customdeploy_avaaddressvalidation]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>View Batches</linklabel>
+      <linkobject>[scriptid=customscript_avaaddvalidresults_suitelet.customdeploy_avaaddressvalidationresults]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

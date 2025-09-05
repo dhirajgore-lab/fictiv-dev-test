@@ -1,0 +1,9 @@
+<scheduledscript scriptid="customscript_f">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo CSV Import</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_fictiv_odoo_csv_import_ss.js]</scriptfile>
+</scheduledscript>

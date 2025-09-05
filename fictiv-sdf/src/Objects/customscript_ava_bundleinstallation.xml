@@ -1,0 +1,31 @@
+<bundleinstallationscript scriptid="customscript_ava_bundleinstallation">
+  <afterinstallfunction></afterinstallfunction>
+  <afterupdatefunction>AVA_BundleAfterUpdate</afterupdatefunction>
+  <beforeinstallfunction></beforeinstallfunction>
+  <beforeuninstallfunction></beforeuninstallfunction>
+  <beforeupdatefunction></beforeupdatefunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_BundleInstallation</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ConfigFunctions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ava_bundleinstallation">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>AVA_BundleInstallation</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+  </libraries>
+</bundleinstallationscript>

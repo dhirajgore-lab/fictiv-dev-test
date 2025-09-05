@@ -1,0 +1,23 @@
+<restlet scriptid="customscript796">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Volopay Script</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/volopay-suitescript.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy1">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audemployee>[ACCOUNT_SPECIFIC_VALUE]</audemployee>
+      <audslctrole>[scriptid=customrole1147]</audslctrole>
+      <isdeployed>T</isdeployed>
+      <loglevel>ERROR</loglevel>
+      <status>RELEASED</status>
+      <title>Volopay Script</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</restlet>

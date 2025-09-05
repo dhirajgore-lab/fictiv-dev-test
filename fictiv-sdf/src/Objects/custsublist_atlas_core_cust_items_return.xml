@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_cust_items_return">
+  <contact>F</contact>
+  <customer>T</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>Items Returned</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_cust_items_returned]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_customer360]</tab>
+  <vendor>F</vendor>
+</sublist>

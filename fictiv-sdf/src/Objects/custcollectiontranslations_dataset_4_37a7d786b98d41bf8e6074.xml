@@ -1,0 +1,10 @@
+<translationcollection scriptid="custcollectiontranslations_dataset_4_37a7d786b98d41bf8e6074">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_4_37a7d786b98d41bf8e6074.dataset_name_22_2]</name>
+  <strings>
+    <string scriptid="dataset_name_22_2">
+      <defaulttranslation>ACS - Customer Deposit Transaction Detail</defaulttranslation>
+      <description>Name in dataset</description>
+    </string>
+  </strings>
+</translationcollection>

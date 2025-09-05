@@ -1,0 +1,25 @@
+<clientscript scriptid="customscript_avapostcommit_client">
+  <description></description>
+  <fieldchangedfunction></fieldchangedfunction>
+  <isinactive>T</isinactive>
+  <lineinitfunction></lineinitfunction>
+  <name>AVA_PostCommit_Client</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <pageinitfunction></pageinitfunction>
+  <postsourcingfunction></postsourcingfunction>
+  <recalcfunction></recalcfunction>
+  <saverecordfunction>AVA_PostCommit_Save</saverecordfunction>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_PostCommitFunctions.js]</scriptfile>
+  <validatedeletefunction></validatedeletefunction>
+  <validatefieldfunction></validatefieldfunction>
+  <validateinsertfunction></validateinsertfunction>
+  <validatelinefunction></validatelinefunction>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+  </libraries>
+</clientscript>

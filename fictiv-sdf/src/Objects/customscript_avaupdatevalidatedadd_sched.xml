@@ -1,0 +1,31 @@
+<scheduledscript scriptid="customscript_avaupdatevalidatedadd_sched">
+  <defaultfunction>AVA_UpdateValidatedAddress</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_UpdateValidatedAddress_Sched</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_AddressValidation.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ava_updatevalidationdeploy1">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_UpdateValidation_deploy1</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2010-11-25</startdate>
+          <starttime>08:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+  </libraries>
+</scheduledscript>

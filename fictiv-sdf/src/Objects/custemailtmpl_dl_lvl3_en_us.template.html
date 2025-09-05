@@ -1,0 +1,125 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<style type="text/css">
+    table {
+        border-collapse: collapse;}
+</style>
+<div>
+    <#if companyInformation.logoUrl!="">
+    <img src="${companyInformation.logoUrl}"/>
+    <br/>
+</#if>
+<#if companyInformation.legalname!="">
+<p>${companyInformation.legalname}</p>
+<#else>
+<p>${companyInformation.companyname}</p>
+</#if>
+</div>
+
+<div>
+    <#assign aDateTime=.now>
+    <#assign aDateTime=aDateTime?string("MMMM dd, yyyy")>
+    <p>${aDateTime}</p>
+    <br/>
+    <#if customer.isperson=="T">
+    Dear ${customer.salutation} <b>${customer.firstname} ${customer.middlename} ${customer.lastname}</b>,            <br/>
+    <#else>
+    Dear <b>${customer.companyname}</b>,
+    <br/>
+</#if>
+<p>This is an important letter and requires your immediate attention. Despite sending you several reminders, we have received no response from you about your seriously past due account. We feel we have given you ample time and have been more than patient with you. It is our normal policy to pass-on seriously delinquently accounts to a third party collection agency or our legal counsel. This could further jeopardize you credit rating in the industry. You can avoid this by sending us a check today for the full amount due. If we do not receive your payment within the next five days, we are going to have to take action.</p>
+<#if invoicegroup??>
+<p>You have a total outstanding balance of ${invoicegroup.amountdue} for the Invoice Group #${invoicegroup.invoicegroupnumber} with the following invoices overdue:</p>
+</p>
+<#else>
+<p>You have a total outstanding balance of ${customer.overduebalance} with the following invoices overdue:</p>
+</#if>
+<span>
+                <#if invoicelist?has_content>
+										<table border="1" style="font-family: sans-serif; font-size: 12px">
+                    <tr style="background-color:#e3e3e3">
+                        <th>Invoice #</th>
+                        <th>Description</th>
+                        <th>Invoice Date</th>
+                        <th>Due Date</th>
+                        <th>Invoice Currency</th>
+                        <th>Amount (Invoice Currency)</th>
+                    </tr>
+                    <#list invoicelist as invoice>
+                        <#if invoice.groupedto == "" || invoicegroup??>
+                        <tr>
+                            <td>${invoice.tranid}
+                                <#if invoice.custbody_3805_dunning_procedure!="">*
+                                </#if>
+                            </td>
+                            <td>${invoice.memo}</td>
+                            <td>${invoice.trandate}</td>
+                            <td>${invoice.duedate}</td>
+                            <td>${invoice.currency}</td>
+                            <td>${invoice.fxamountremaining?string.number}</td>
+                        </tr>
+                        </#if>
+                    </#list>
+<#list invoicegrouplist as invoicegrouprecord>
+<tr style="background-color:#e3e3e3">
+    <th>Invoice Group #${invoicegrouprecord.invoicegroupnumber}
+        <#if invoicegrouprecord.custrecord_dl_ig_dunning_procedure!="">*
+    </#if>
+    </th>
+</tr>
+<#list invoicelist as invoice>
+<#if invoice.groupedto == invoicegrouprecord.invoicegroupnumber>
+<tr>
+    <td>${invoice.tranid}<#if invoice.custbody_3805_dunning_procedure != "">*</#if></td>
+    <td>${invoice.memo}</td>
+    <td>${invoice.trandate}</td>
+    <td>${invoice.duedate}</td>
+    <td>${invoice.currency}</td>
+    <td>${invoice.fxamountremaining?string.number}</td>
+</tr>
+</#if>
+</#list>
+</#list>
+</table>
+<#if invoicegroup??>
+<span style="font-style: italic;">*A separate dunning letter may be sent for each marked invoice.</span>
+<#else>
+<span style="font-style: italic;">*A separate dunning letter may be sent for each marked invoice/invoice group.</span>
+</#if>
+<#elseif invoice??>
+<table border="1" style="font-family: sans-serif; font-size: 12px">
+    <tr style="background-color:#e3e3e3">
+        <th>Invoice #</th>
+        <th>Description</th>
+        <th>Invoice Date</th>
+        <th>Due Date</th>
+        <th>Currency</th>
+        <th>Amount</th>
+    </tr>
+    <tr>
+        <td>${invoice.tranid}</td>
+        <td>${invoice.memo}</td>
+        <td>${invoice.trandate}</td>
+        <td>${invoice.duedate}</td>
+        <td>${invoice.currency}</td>
+        <td>${invoice.amountremaining}</td>
+    </tr>
+</table>
+</#if>
+</span>
+<p>We regret having to take this action, but we feel we have been more than patient with you. We sincerely hope you will give this your serious consideration.</p>
+<p>To access your NetSuite Customer Center account, please log in to <a href="https://${companyInformation.appDomain}/pages/customerlogin.jsp">https://${companyInformation.appDomain}/pages/customerlogin.jsp</a></p>
+<p>Sincerely,<br/>
+    <br/>
+
+    ${employee.salutation} ${employee.firstname} ${employee.middlename} ${employee.lastname}<br/>
+    <#if companyInformation.legalname!="">
+    ${companyInformation.legalname}<br/>
+    <#else>
+    ${companyInformation.companyname}<br/>
+</#if>
+
+${companyInformation.phone}<br/>
+${companyInformation.email}<br/>
+${companyInformation.fax}<br/>
+</p>
+</div>

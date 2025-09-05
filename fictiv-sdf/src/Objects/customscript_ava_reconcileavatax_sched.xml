@@ -1,0 +1,37 @@
+<scheduledscript scriptid="customscript_ava_reconcileavatax_sched">
+  <defaultfunction>AVA_ReconcileData</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_ReconcileTax_Scheduled</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ReconcileHistory.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_reconciletax_deploy1">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_ReconcileTax_Scheduled 1</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2008-07-18</startdate>
+          <starttime>10:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</scheduledscript>

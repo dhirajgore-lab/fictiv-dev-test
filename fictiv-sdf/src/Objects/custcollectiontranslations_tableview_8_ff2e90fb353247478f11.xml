@@ -1,0 +1,10 @@
+<translationcollection scriptid="custcollectiontranslations_tableview_8_ff2e90fb353247478f11">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_tableview_8_ff2e90fb353247478f11.tableview_name_24_2]</name>
+  <strings>
+    <string scriptid="tableview_name_24_2">
+      <defaulttranslation>Transaction Detail</defaulttranslation>
+      <description>Name in tableView</description>
+    </string>
+  </strings>
+</translationcollection>

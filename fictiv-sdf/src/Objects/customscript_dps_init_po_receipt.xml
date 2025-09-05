@@ -1,0 +1,47 @@
+<mapreducescript scriptid="customscript_dps_init_po_receipt">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>期初|采购收货入库</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/init/l.po.receive.mp.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy2">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>期初|采购收货入库 2</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2021-07-06</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_dps_init_po_receipt">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>期初|采购收货入库</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2021-01-01</startdate>
+          <starttime>10:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

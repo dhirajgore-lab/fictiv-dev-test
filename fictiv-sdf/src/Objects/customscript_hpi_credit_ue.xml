@@ -1,0 +1,26 @@
+<usereventscript scriptid="customscript_hpi_credit_ue">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Pur Invoice Credit UE</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 374134/com.douplestech.batchbilling/src/component/ue/hpi_vendor_credit_ue.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_hpi_credit_ue">
+      <allemployees>F</allemployees>
+      <alllocalizationcontexts>T</alllocalizationcontexts>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole>CUSTOMER_CENTER|EMPLOYEE_CENTER|NETSUITE_SUPPORT_CENTER|NETSUITE_SUPPORT_CENTER__BASIC|ONLINE_FORM_USER|PARTNER_CENTER|VENDOR_CENTER</audslctrole>
+      <eventtype></eventtype>
+      <executioncontext>ACTION|ADVANCEDREVREC|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CONSOLRATEADJUSTOR|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OTHER|PAYMENTGATEWAY|PAYMENTPOSTBACK|PLATFORMEXTENSION|PORTLET|PROMOTIONS|RESTLET|RESTWEBSERVICES|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WEBSERVICES|WORKBOOKBUILDER|WORKFLOW</executioncontext>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <recordtype>VENDORCREDIT</recordtype>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+    </scriptdeployment>
+  </scriptdeployments>
+</usereventscript>

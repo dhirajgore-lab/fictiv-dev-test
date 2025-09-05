@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_107_4541795_sb1_127" standard="STDTMPLCUSTINVC">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>FTS Bangalore - Sale of Goods Invoice PDF/HTML Template</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

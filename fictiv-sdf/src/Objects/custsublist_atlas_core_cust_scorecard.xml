@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_cust_scorecard">
+  <contact>F</contact>
+  <customer>T</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>Customer Scorecard</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_customer_scorecard]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_customer360]</tab>
+  <vendor>F</vendor>
+</sublist>

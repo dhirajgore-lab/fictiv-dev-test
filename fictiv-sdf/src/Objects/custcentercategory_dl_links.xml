@@ -1,0 +1,79 @@
+<centercategory scriptid="custcentercategory_dl_links">
+  <center>BASIC</center>
+  <centertab>BASICCENTERSETUP</centertab>
+  <label translate="T">[scriptid=custcollection_dl_translations.cent_cat_dl_links_dunning_label]</label>
+  <links>
+    <link>
+      <linklabel>Dunning Templates</linklabel>
+      <linkobject>[scriptid=customrecord_3805_dunning_template]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning Level Rules</linklabel>
+      <linkobject>[scriptid=customrecord_3805_dunning_eval_rule]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning Procedures</linklabel>
+      <linkobject>[scriptid=customrecord_3805_dunning_procedure]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_dl_translations.cent_cat_dl_links_dunning_proc_priority_label]</linklabel>
+      <linkobject>[scriptid=customsearch_3805_dunning_prio_search]</linkobject>
+      <linktasktype>SRCH_RSLT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_dl_translations.cent_cat_dl_links_dunning_bulk_assignment]</linklabel>
+      <linkobject>[scriptid=customscript_dl_su_bulk_assignment.customdeploy_dl_su_bulk_assignment]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_dl_translations.cent_cat_dl_links_dunning_pause_reasons_label]</linklabel>
+      <linkobject>[scriptid=customrecord_3805_dunning_status]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_dl_translations.cent_cat_dl_links_dunning_configurations_label]</linklabel>
+      <linkobject>[scriptid=customrecord_3805_dunning_config]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Bulk Update Customer Records</linklabel>
+      <linkobject>[scriptid=customscript_3805_dunning_bulk_update.customdeploy_3805_dunning_bulk_update]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning Email Sending Queue</linklabel>
+      <linkobject>[scriptid=customscript_3805_su_dunning_queue_ss2.customdeploy_3805_dunning_queue_email]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning PDF Printing Queue</linklabel>
+      <linkobject>[scriptid=customscript_3805_su_dunning_queue_ss2.customdeploy_3805_dunning_queue_pdf]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning Template Invoice Field</linklabel>
+      <linkobject>[scriptid=customscript_3805_su_add_email_field.customdeploy_3805_add_email_field]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Dunning Setup Assistant</linklabel>
+      <linkobject>[scriptid=customscript_dl_su_guided_dunning.customdeploy_dl_su_guided_dunning]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

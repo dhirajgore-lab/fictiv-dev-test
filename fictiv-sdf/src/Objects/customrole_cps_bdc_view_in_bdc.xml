@@ -1,0 +1,34 @@
+<role scriptid="customrole_cps_bdc_view_in_bdc">
+  <centertype>BASIC</centertype>
+  <coreadminpermission>F</coreadminpermission>
+  <custrecord_dunning_role_flag></custrecord_dunning_role_flag>
+  <employeerestriction>NONE</employeerestriction>
+  <employeeselectionunrestricted>F</employeeselectionunrestricted>
+  <isinactive>F</isinactive>
+  <issalesrole>F</issalesrole>
+  <issinglesignononly>F</issinglesignononly>
+  <issupportrole>F</issupportrole>
+  <iswebserviceonlyrole>F</iswebserviceonlyrole>
+  <name>View in Bill.com </name>
+  <parentrolescriptid></parentrolescriptid>
+  <restrictbydevice>F</restrictbydevice>
+  <subsidiaryoption>OWN</subsidiaryoption>
+  <subsidiaryviewingallowed>F</subsidiaryviewingallowed>
+  <tfaduration>0</tfaduration>
+  <tfarequired>OFF</tfarequired>
+  <permissions>
+    <permission>
+      <permkey>LIST_OTHER_ADDRESS</permkey>
+      <permlevel>FULL</permlevel>
+    </permission>
+    <permission>
+      <permkey>LIST_CUSTRECORDENTRY</permkey>
+      <permlevel>VIEW</permlevel>
+    </permission>
+    <permission>
+      <permkey>[scriptid=customrecord_cps_bdc_preferences]</permkey>
+      <permlevel>VIEW</permlevel>
+      <restriction></restriction>
+    </permission>
+  </permissions>
+</role>

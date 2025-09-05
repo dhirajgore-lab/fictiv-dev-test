@@ -1,0 +1,37 @@
+<scheduledscript scriptid="customscript_avacommittrans_sched">
+  <defaultfunction>AVA_CommitTransaction</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_CommitTransaction_Sched</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_PostCommitFunctions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_avacommittrans_sched">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_CommitTransaction_Sched</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2019-07-08</startdate>
+          <starttime>13:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</scheduledscript>

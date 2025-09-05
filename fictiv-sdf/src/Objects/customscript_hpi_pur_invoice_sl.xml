@@ -1,0 +1,32 @@
+<suitelet scriptid="customscript_hpi_pur_invoice_sl">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Pur Invoice SL</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 374134/com.douplestech.batchbilling/src/component/sl/hpi_pur_invoice_sl.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_hpi_pur_invoice_sl">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole></audslctrole>
+      <audsubsidiary>[ACCOUNT_SPECIFIC_VALUE]</audsubsidiary>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Pur Invoice SL</title>
+      <links>
+        <link>
+          <linkcategory>BASICTRANSACTIONSPURCHASESVENDORS</linkcategory>
+          <linklabel>Batch Billing</linklabel>
+        </link>
+      </links>
+    </scriptdeployment>
+  </scriptdeployments>
+</suitelet>

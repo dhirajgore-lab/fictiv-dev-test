@@ -1,0 +1,18 @@
+<translationcollection scriptid="custcollectiontranslations_pivot_14_65c1346315734cb79aea52c">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_name_39_6]</name>
+  <strings>
+    <string scriptid="report_name_39_6">
+      <defaulttranslation>Pivot by PO Number</defaulttranslation>
+      <description>Name of pivot</description>
+    </string>
+    <string scriptid="report_row_axis_39_8">
+      <defaulttranslation>Quantity Received</defaulttranslation>
+      <description>Row Axis in pivot</description>
+    </string>
+    <string scriptid="report_row_axis_46_7">
+      <defaulttranslation>Amount</defaulttranslation>
+      <description>Row Axis in pivot</description>
+    </string>
+  </strings>
+</translationcollection>

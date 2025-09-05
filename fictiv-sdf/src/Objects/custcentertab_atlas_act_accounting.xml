@@ -1,0 +1,187 @@
+<centertab scriptid="custcentertab_atlas_act_accounting">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>[scriptid=customrole_atlas_ff_em_controller]</audslctrole>
+  <center>ACCOUNTCENTER</center>
+  <label>Administration &amp; Controls</label>
+  <portlets>
+    <portlet scriptid="portlet_1262_4645765_291">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1263_4645765_441">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1264_4645765_999">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1265_4645765_273">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1266_4645765_831">
+      <isportletshown>T</isportletshown>
+      <portlet>DASHBOARD_APP</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1267_4645765_670">
+      <isportletshown>T</isportletshown>
+      <portlet>LASTLOGIN</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1268_4645765_577">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1269_4645765_931">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1270_4645765_953">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1271_4645765_423">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1272_4645765_579">
+      <isportletshown>T</isportletshown>
+      <portlet>DASHBOARD_APP</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1273_4645765_300">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1274_4645765_515">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1275_4645765_724">
+      <isportletshown>T</isportletshown>
+      <portlet>LASTLOGIN</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1276_4645765_172">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1277_4645765_689">
+      <isportletshown>T</isportletshown>
+      <portlet>SYSTEMSTATUS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1278_4645765_111">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1279_4645765_644">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_752_4577637_422">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_753_4577637_943">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_754_4577637_814">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_755_4577637_871">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_756_4577637_323">
+      <isportletshown>T</isportletshown>
+      <portlet>DASHBOARD_APP</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_757_4577637_110">
+      <isportletshown>T</isportletshown>
+      <portlet>LASTLOGIN</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_758_4577637_894">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_759_4577637_886">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_760_4577637_660">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_761_4577637_385">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_762_4577637_556">
+      <isportletshown>T</isportletshown>
+      <portlet>DASHBOARD_APP</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_763_4577637_261">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_764_4577637_591">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_765_4577637_869">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_766_4577637_802">
+      <isportletshown>T</isportletshown>
+      <portlet>SYSTEMSTATUS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_767_4577637_419">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_768_4577637_401">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

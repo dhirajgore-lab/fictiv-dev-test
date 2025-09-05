@@ -1,0 +1,10 @@
+<translationcollection scriptid="custcollectiontranslations_tableview_12_cfe6545d64a743e4adb">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_tableview_12_cfe6545d64a743e4adb.tableview_name_39_2]</name>
+  <strings>
+    <string scriptid="tableview_name_39_2">
+      <defaulttranslation>Purchases (Ordered) Workbook</defaulttranslation>
+      <description>Name in tableView</description>
+    </string>
+  </strings>
+</translationcollection>

@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_f3_fictiv_odoo_intgr_ss_v2">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo Integration SS V2</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_fictiv_odoo_integration_ss_v2.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_fictiv_odoo_intgr_ss_v2d">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Fictiv Odoo Integration SS V2</title>
+      <recurrence>
+        <single>
+          <repeat>PT1H</repeat>
+          <startdate>2020-01-31</startdate>
+          <starttime>02:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

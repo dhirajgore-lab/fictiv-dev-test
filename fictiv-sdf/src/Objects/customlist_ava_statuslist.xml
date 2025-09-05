@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_ava_statuslist">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Avalara Status List</name>
+  <customvalues>
+    <customvalue scriptid="val_58952_t1659238_909">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>To be Processed</value>
+    </customvalue>
+    <customvalue scriptid="val_58953_t1659238_258">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Processed</value>
+    </customvalue>
+    <customvalue scriptid="val_58954_t1659238_108">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Not Required</value>
+    </customvalue>
+  </customvalues>
+</customlist>

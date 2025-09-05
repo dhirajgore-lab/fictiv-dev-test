@@ -1,0 +1,27 @@
+<centertab scriptid="custcentertab19_2">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>ACCOUNTANT</audslctrole>
+  <center>ACCOUNTCENTER</center>
+  <label>Avalara</label>
+  <portlets>
+    <portlet scriptid="portlet_104_t401867_457">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_105_t401867_457">
+      <isportletshown>T</isportletshown>
+      <portlet>SETTINGS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_106_t401867_457">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

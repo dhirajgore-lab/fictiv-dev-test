@@ -1,0 +1,22 @@
+<centertab scriptid="custcentertab9">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>[scriptid=customrole_esc_sales_publisher]|[scriptid=customrole_esc_sales_admin]</audslctrole>
+  <center>[scriptid=custcenter1]</center>
+  <label>Setup</label>
+  <portlets>
+    <portlet scriptid="portlet_53_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_50_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

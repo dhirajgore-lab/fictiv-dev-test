@@ -1,0 +1,19 @@
+<customlist scriptid="customlist_nspbcs_dim_and_mem_type">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>NSPB Dimension and Member Type</name>
+  <customvalues>
+    <customvalue scriptid="pov">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>POV</value>
+    </customvalue>
+    <customvalue scriptid="rows">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Rows</value>
+    </customvalue>
+  </customvalues>
+</customlist>

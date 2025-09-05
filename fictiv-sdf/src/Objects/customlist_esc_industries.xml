@@ -1,0 +1,169 @@
+<customlist scriptid="customlist_esc_industries">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>F</isordered>
+  <name>Industry</name>
+  <customvalues>
+    <customvalue scriptid="value_1_3368792_349">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Agriculture</value>
+    </customvalue>
+    <customvalue scriptid="value_2_3368792_349">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Apparel</value>
+    </customvalue>
+    <customvalue scriptid="value_3_3368792_349">
+      <abbreviation>B</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Banking</value>
+    </customvalue>
+    <customvalue scriptid="value_4_3368792_349">
+      <abbreviation>B</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Biotechnology</value>
+    </customvalue>
+    <customvalue scriptid="value_5_3368792_349">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Chemicals</value>
+    </customvalue>
+    <customvalue scriptid="value_6_3368792_349">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Communications</value>
+    </customvalue>
+    <customvalue scriptid="value_7_3368792_349">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Construction</value>
+    </customvalue>
+    <customvalue scriptid="value_8_3368792_349">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Consulting</value>
+    </customvalue>
+    <customvalue scriptid="value_9_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Education</value>
+    </customvalue>
+    <customvalue scriptid="value_10_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Electronics</value>
+    </customvalue>
+    <customvalue scriptid="value_11_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Energy</value>
+    </customvalue>
+    <customvalue scriptid="value_12_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Engineering</value>
+    </customvalue>
+    <customvalue scriptid="value_13_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Entertainment</value>
+    </customvalue>
+    <customvalue scriptid="value_14_3368792_349">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Environmental</value>
+    </customvalue>
+    <customvalue scriptid="value_15_3368792_349">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Finance</value>
+    </customvalue>
+    <customvalue scriptid="value_16_3368792_349">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Food &amp; Beverage</value>
+    </customvalue>
+    <customvalue scriptid="value_17_3368792_349">
+      <abbreviation>G</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Government</value>
+    </customvalue>
+    <customvalue scriptid="value_18_3368792_349">
+      <abbreviation>H</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Healthcare</value>
+    </customvalue>
+    <customvalue scriptid="value_19_3368792_349">
+      <abbreviation>H</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Hospitality</value>
+    </customvalue>
+    <customvalue scriptid="value_20_3368792_349">
+      <abbreviation>I</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Insurance</value>
+    </customvalue>
+    <customvalue scriptid="value_21_3368792_349">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Machinery</value>
+    </customvalue>
+    <customvalue scriptid="value_22_3368792_349">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Manufacturing</value>
+    </customvalue>
+    <customvalue scriptid="value_23_3368792_349">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Media</value>
+    </customvalue>
+    <customvalue scriptid="value_24_3368792_349">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Not for Profit</value>
+    </customvalue>
+    <customvalue scriptid="value_25_3368792_349">
+      <abbreviation>O</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+    <customvalue scriptid="value_26_3368792_349">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Recreation</value>
+    </customvalue>
+    <customvalue scriptid="value_27_3368792_349">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Retail</value>
+    </customvalue>
+    <customvalue scriptid="value_28_3368792_349">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Shipping</value>
+    </customvalue>
+    <customvalue scriptid="value_29_3368792_349">
+      <abbreviation>T</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Technology</value>
+    </customvalue>
+    <customvalue scriptid="value_30_3368792_349">
+      <abbreviation>T</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Telecomminications</value>
+    </customvalue>
+    <customvalue scriptid="value_31_3368792_349">
+      <abbreviation>T</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Transportation</value>
+    </customvalue>
+    <customvalue scriptid="value_32_3368792_349">
+      <abbreviation>U</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Utilities</value>
+    </customvalue>
+  </customvalues>
+</customlist>

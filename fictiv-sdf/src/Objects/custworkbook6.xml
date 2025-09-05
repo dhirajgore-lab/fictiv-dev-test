@@ -1,0 +1,181 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<workbook scriptid="custworkbook6">
+  <name translate="T">[scriptid=custcollectiontranslations_workbook_6_63b1c770b02447d1a2f9d.workbook_name_39_1]</name>
+  <dependencies>
+    <dependency>[scriptid=custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_name_39_6]</dependency>
+    <dependency>[scriptid=custdataset6]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_tableview_12_cfe6545d64a743e4adb.tableview_name_39_2]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_row_axis_39_8]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_row_axis_46_7]</dependency>
+  </dependencies>
+  <definition><![CDATA[<root>
+<Workbook>
+  <_T_>workbook</_T_>
+  <id type="null"/>
+  <scriptId type="null"/>
+  <applicationId type="null"/>
+  <version>1.1.1</version>
+  <name>
+    <translationScriptId>custcollectiontranslations_workbook_6_63b1c770b02447d1a2f9d.workbook_name_39_1</translationScriptId>
+  </name>
+  <audience>
+    <AudienceItems type="array"/>
+    <isPublic type="boolean">false</isPublic>
+  </audience>
+  <ownerId>345719</ownerId>
+  <description type="null"/>
+  <dataViewIDs type="array">
+    <_ITEM_>custview12_17532272905839805902</_ITEM_>
+  </dataViewIDs>
+  <pivotIDs type="array">
+    <_ITEM_>custpivot14_17532272917313130342</_ITEM_>
+  </pivotIDs>
+  <chartIDs type="array"/>
+</Workbook>
+<pivots type="array">
+  <_ITEM_>
+    <_T_>pivot</_T_>
+    <id type="null"/>
+    <scriptId>custpivot14_17532272917313130342</scriptId>
+    <applicationId type="null"/>
+    <version>1.2021.2</version>
+    <name>
+      <translationScriptId>custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_name_39_6</translationScriptId>
+    </name>
+    <workbook>custworkbook6</workbook>
+    <datasets type="array">
+      <_ITEM_>custdataset6</_ITEM_>
+    </datasets>
+    <format>{"view":{},"layoutItem":{}}</format>
+    <order>1</order>
+    <definition>&lt;root>&lt;version>1&lt;/version>&lt;rowAxis>&lt;dimensionTree>&lt;_T_>section&lt;/_T_>&lt;id>23&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>14&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>15&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>16&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>17&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>18&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>19&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>20&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>21&lt;/id>&lt;children type="array">&lt;_ITEM_>&lt;_T_>dataDimension&lt;/_T_>&lt;id>22&lt;/id>&lt;items type="array">&lt;_ITEM_>&lt;id>8&lt;/id>&lt;expression>&lt;function>dateTimeProperty&lt;/function>&lt;args>&lt;dateTime>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>dateType&lt;/_T_>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>transactionlines.expectedreceiptdate&lt;/fieldId>&lt;/args>&lt;/dateTime>&lt;hierarchy>month&lt;/hierarchy>&lt;property>datetime&lt;/property>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>12&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>currencyType&lt;/_T_>&lt;convertible type="boolean">true&lt;/convertible>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>transactionlines.debitforeignamount&lt;/fieldId>&lt;/args>&lt;/expression>&lt;label>&lt;function>translate&lt;/function>&lt;args>&lt;translationId>custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_row_axis_46_7&lt;/translationId>&lt;/args>&lt;/label>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>10&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>decimalType&lt;/_T_>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>transactionlines.quantityshiprecv&lt;/fieldId>&lt;/args>&lt;/expression>&lt;label>&lt;function>translate&lt;/function>&lt;args>&lt;translationId>custcollectiontranslations_pivot_14_65c1346315734cb79aea52c.report_row_axis_39_8&lt;/translationId>&lt;/args>&lt;/label>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>9&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>decimalType&lt;/_T_>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>transactionlines.quantity&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>6&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>textType&lt;/_T_>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>transactionlines.item^item.fullname&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>7&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>recordType&lt;/_T_>&lt;id>record_custbody_st_customer_sales_order&lt;/id>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>custbody_st_customer_sales_order&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>13&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>recordType&lt;/_T_>&lt;id>record_status&lt;/id>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>status&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;items type="array">&lt;_ITEM_>&lt;id>2&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>recordType&lt;/_T_>&lt;id>record_entity&lt;/id>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>entity&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;totalLineVisibility>last&lt;/totalLineVisibility>&lt;items type="array">&lt;_ITEM_>&lt;id>5&lt;/id>&lt;expression>&lt;function>field&lt;/function>&lt;args>&lt;type>&lt;_T_>textType&lt;/_T_>&lt;/type>&lt;dataSourceId>custdataset6&lt;/dataSourceId>&lt;fieldId>tranid&lt;/fieldId>&lt;/args>&lt;/expression>&lt;/_ITEM_>&lt;/items>&lt;/_ITEM_>&lt;/children>&lt;/dimensionTree>&lt;sorting type="array">&lt;_ITEM_>&lt;_T_>sortDefinition&lt;/_T_>&lt;sortedNodes>&lt;_T_>reportNodePathSelector&lt;/_T_>&lt;selectors type="array">&lt;_ITEM_>&lt;_T_>descendantOrSelfNodesSelector&lt;/_T_>&lt;/_ITEM_>&lt;_ITEM_>&lt;_T_>dimensionSelector&lt;/_T_>&lt;dimension>&lt;ref>22&lt;/ref>&lt;/dimension>&lt;/_ITEM_>&lt;/selectors>&lt;/sortedNodes>&lt;sortBy type="array">&lt;_ITEM_>&lt;_T_>sortByDataDimensionItem&lt;/_T_>&lt;dataDimensionItem>&lt;ref>8&lt;/ref>&lt;/dataDimensionItem>&lt;comparator>&lt;_T_>dateComparator&lt;/_T_>&lt;/comparator>&lt;/_ITEM_>&lt;/sortBy>&lt;/_ITEM_>&lt;/sorting>&lt;/rowAxis>&lt;columnAxis>&lt;dimensionTree>&lt;_T_>section&lt;/_T_>&lt;id>24&lt;/id>&lt;/dimensionTree>&lt;/columnAxis>&lt;measures type="array"/>&lt;/root></definition>
+  </_ITEM_>
+</pivots>
+<charts type="array"/>
+<dataViews type="array">
+  <_ITEM_>
+    <_T_>dataView</_T_>
+    <id type="null"/>
+    <scriptId>custview12_17532272905839805902</scriptId>
+    <applicationId type="null"/>
+    <version>1.2021.2</version>
+    <name>
+      <translationScriptId>custcollectiontranslations_tableview_12_cfe6545d64a743e4adb.tableview_name_39_2</translationScriptId>
+    </name>
+    <workbook>custworkbook6</workbook>
+    <datasets type="array">
+      <_ITEM_>custdataset6</_ITEM_>
+    </datasets>
+    <columns type="array">
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>1</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting>
+          <caseSensitive type="boolean">true</caseSensitive>
+          <nullFirst type="boolean">false</nullFirst>
+          <direction>ASCENDING</direction>
+          <localeId>en_US</localeId>
+          <order>0</order>
+        </sorting>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>2</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>3</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>4</dataSetColumnId>
+        <targetFieldContext>
+          <name>DEFAULT</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>5</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>6</dataSetColumnId>
+        <targetFieldContext>
+          <name>DEFAULT</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset6</datasetScriptId>
+        <dataSetColumnId>7</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+    </columns>
+    <order>0</order>
+  </_ITEM_>
+</dataViews>
+<datasetLinks type="array"/>
+</root>]]></definition>
+  <pivots>
+    <pivot scriptid="custpivot14_17532272917313130342">
+    </pivot>
+  </pivots>
+  <tables>
+    <table scriptid="custview12_17532272905839805902">
+    </table>
+  </tables>
+</workbook>

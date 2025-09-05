@@ -1,0 +1,5 @@
+<subtab scriptid="custtab_32_3956802_208">
+  <parent>[scriptid=custtab_28_3956802_208]</parent>
+  <tabtype>TRANSACTION</tabtype>
+  <title translate="T">[scriptid=custcollection_dl_translations.procedure_setup_trans_subtab_name]</title>
+</subtab>

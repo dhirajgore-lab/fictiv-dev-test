@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_411_4541795_sb1_992" standard="STDTMPLSALESORD">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Fictiv Sales Order PDF/HTML Template</title>
+  <trantype>SALESORD</trantype>
+</advancedpdftemplate>

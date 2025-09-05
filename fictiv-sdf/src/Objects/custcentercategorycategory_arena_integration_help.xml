@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategorycategory_arena_integration_help">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_arena_integration_tab]</centertab>
+  <label>Help &amp; Support</label>
+  <links>
+    <link>
+      <linklabel>Implementation &amp; Mapping Doc</linklabel>
+      <linkobject>[scriptid=customscript_arena_integ_mapping_sui.customdeploy_arena_integ_mapping_sui]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Technical Support &amp; User Guide</linklabel>
+      <linkobject>[scriptid=customscript_arena_integ_help_link_sui.customdeploy_arena_integ_help_link_sui]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_406_4541795_194" standard="STDTMPLCUSTINVC">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Odoo Proforma Invoice PDF/HTML Template</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

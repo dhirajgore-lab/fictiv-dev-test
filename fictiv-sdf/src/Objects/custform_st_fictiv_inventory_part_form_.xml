@@ -1,0 +1,2013 @@
+<entryForm scriptid="custform_st_fictiv_inventory_part_form_" standard="STANDARDINVENTORYPARTFORM">
+  <name>Fictiv | Inventory Part Form</name>
+  <recordType>INVENTORYITEM</recordType>
+  <inactive>F</inactive>
+  <preferred>T</preferred>
+  <storedWithRecord>F</storedWithRecord>
+  <mainFields>
+    <fieldGroup scriptid="primaryinformation">
+      <label>Primary Information</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>CUSTOMFORM</id>
+          <label>Custom Form</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>INTERNALID</id>
+          <label>Internal ID</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>ITEMID</id>
+          <label>Item Name/Number</label>
+          <visible>T</visible>
+          <mandatory>T</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>UPCCODE</id>
+          <label>UPC Code</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>DISPLAYNAME</id>
+          <label>Display Name/Code</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>VENDORNAME</id>
+          <label>Vendor Name/Code</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>UNITSTYPE</id>
+          <label>Primary Units Type</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>BASEUNIT</id>
+          <label>Primary Base Unit</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>PARENT</id>
+          <label>Subitem of</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>CONSUMPTIONUNIT</id>
+          <label>Primary Consumption Unit</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custitem_st_eccn_compliance_]</id>
+          <label>Is Controlled Item</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custitem_st_eccn_number_]</id>
+          <label>US ECCN</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custitem_st_allow_country_visibility_]</id>
+          <label>Allowed Country Visibility</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>DISABLED</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <fieldGroup scriptid="classification">
+      <label>Classification</label>
+      <visible>T</visible>
+      <showTitle>T</showTitle>
+      <singleColumn>F</singleColumn>
+      <fields position="MIDDLE">
+        <field>
+          <id>SUBSIDIARY</id>
+          <label>Subsidiary</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>DEPARTMENT</id>
+          <label>Department</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>CLASS</id>
+          <label>Class</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>LOCATION</id>
+          <label>Location</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+        <field>
+          <id>[scriptid=custitem_cseg_cn_cfi]</id>
+          <label>中国现金流量表项</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </fieldGroup>
+    <defaultFieldGroup>
+      <fields position="MIDDLE">
+        <field>
+          <id>[appid=com.suitesuccess.woaao, scriptid=custitem_atlas_woa_item_planner]</id>
+          <label>Planner (WOA)</label>
+          <visible>T</visible>
+          <mandatory>F</mandatory>
+          <displayType>NORMAL</displayType>
+          <columnBreak>F</columnBreak>
+          <sameRowAsPrevious>F</sameRowAsPrevious>
+        </field>
+      </fields>
+    </defaultFieldGroup>
+  </mainFields>
+  <tabs>
+    <tab>
+      <id>ITEMINVENTORY</id>
+      <label>Purchasing/Inventory</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <fieldGroup scriptid="itemcostdetail">
+          <label>Item/Cost Detail</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>COSTINGMETHOD</id>
+              <label>Costing Method</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>TOTALQUANTITYONHAND</id>
+              <label>Total Quantity On Hand</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>TOTALVALUE</id>
+              <label>Total Value</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>AVERAGECOST</id>
+              <label>Average Cost</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COST</id>
+              <label>Purchase Price</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>LASTPURCHASEPRICE</id>
+              <label>Last Purchase Price</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PURCHASEDESCRIPTION</id>
+              <label>Purchase Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOCKDESCRIPTION</id>
+              <label>Stock Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MATCHBILLTORECEIPT</id>
+              <label>Match Bill To Receipt</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>DEFAULTRETURNCOST</id>
+              <label>Default Return Cost</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="inventorymanagement">
+          <label>Inventory Management</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>REORDERMULTIPLE</id>
+              <label>Reorder Multiple</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COSTACCOUNTINGSTATUS</id>
+              <label>Cost Accounting Status</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>TRANSFERPRICE</id>
+              <label>Transfer Price</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SERIALNUMBERS</id>
+              <label>Serial/Lot Numbers</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>QUANTITYONHAND</id>
+              <label>Quantity On Hand</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>QUANTITYONORDER</id>
+              <label>Quantity On Order</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>QUANTITYCOMMITTED</id>
+              <label>Quantity Committed</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>QUANTITYAVAILABLE</id>
+              <label>Quantity Available</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>QUANTITYBACKORDERED</id>
+              <label>Quantity Back Ordered</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="manufacturing">
+          <label>Manufacturing</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>MANUFACTURER</id>
+              <label>Manufacturer</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MPN</id>
+              <label>MPN</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COUNTRYOFMANUFACTURE</id>
+              <label>Manufacturer Country</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PRODUCER</id>
+              <label>Producer</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MULTMANUFACTUREADDR</id>
+              <label>Multiple Manufacture Addresses</label>
+              <visible>F</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERADDR1</id>
+              <label>Manufacturer Address</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERCITY</id>
+              <label>Manufacturer City</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERSTATE</id>
+              <label>Manufacturer State</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERZIP</id>
+              <label>Manufacturer Zip</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERTAXID</id>
+              <label>Manufacturer Tax Id</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MANUFACTURERTARIFF</id>
+              <label>Manufacturer Tariff</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="fulfillment">
+          <label>Fulfillment</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+        </fieldGroup>
+        <fieldGroup scriptid="vendorbillmatching">
+          <label>Vendor Bill Matching</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>PURCHASEORDERQUANTITY</id>
+              <label>Vendor Bill - Purchase Order Quantity Tolerance</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PURCHASEORDERAMOUNT</id>
+              <label>Vendor Bill - Purchase Order Amount Tolerance</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PURCHASEORDERQUANTITYDIFF</id>
+              <label>Vendor Bill - Purchase Order Quantity Difference</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>RECEIPTQUANTITY</id>
+              <label>Vendor Bill - Item Receipt Quantity Tolerance</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>RECEIPTAMOUNT</id>
+              <label>Vendor Bill - Item Receipt Amount Tolerance</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>RECEIPTQUANTITYDIFF</id>
+              <label>Vendor Bill - Item Receipt Quantity Difference</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>TRACKLANDEDCOST</id>
+              <label>Track Landed Cost</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COPYDESCRIPTION</id>
+              <label>Copy from Sales Order</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>T</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ISDROPSHIPITEM</id>
+              <label>Drop Ship Item</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ISSPECIALORDERITEM</id>
+              <label>Special Order Item</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>USEBINS</id>
+              <label>Use Bins</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>DEFAULTITEMSHIPMETHOD</id>
+              <label>Default Shipping Method</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ITEMCARRIER</id>
+              <label>Carrier</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ITEMSHIPMETHOD</id>
+              <label>Shipping Methods</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ROUNDUPASCOMPONENT</id>
+              <label>Round Up Quantity as Component</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMNUMBERS</id>
+          <label>Inventory Numbers</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subTab>
+          <id>ITEMLOCATIONS</id>
+          <label>Locations</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup>
+              <fields position="MIDDLE">
+                <field>
+                  <id>PREFERREDLOCATION</id>
+                  <label>Preferred Location</label>
+                  <visible>T</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+              </fields>
+            </defaultFieldGroup>
+          </fieldGroups>
+          <subLists>
+            <subList>
+              <id>ITEMLOCATIONS</id>
+              <label>Locations</label>
+              <visible>T</visible>
+              <neverEmpty>F</neverEmpty>
+            </subList>
+          </subLists>
+        </subTab>
+        <subTab>
+          <id>ITEMVENDORS</id>
+          <label>Vendors</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup/>
+          </fieldGroups>
+          <subLists>
+            <subList>
+              <id>ITEMITEMVENDOR</id>
+              <label>Vendors</label>
+              <visible>T</visible>
+              <neverEmpty>F</neverEmpty>
+            </subList>
+          </subLists>
+        </subTab>
+        <subList>
+          <id>ITEMBINNUMBER</id>
+          <label>Bin Numbers</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMPRICING</id>
+      <label>Sales / Pricing</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <fieldGroup scriptid="sales">
+          <label>Sales</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>RATE</id>
+              <label>Sales Price (Rate)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SALESDESCRIPTION</id>
+              <label>Sales Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COSTESTIMATETYPE</id>
+              <label>Cost Estimate Type</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COSTESTIMATE</id>
+              <label>Item Defined Cost</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>BILLINGSCHEDULE</id>
+              <label>Billing Schedule</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MINIMUMQUANTITY</id>
+              <label>Minimum Quantity</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MAXIMUMQUANTITY</id>
+              <label>Maximum Quantity</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ENFORCEMINQTYINTERNALLY</id>
+              <label>Enforce Minimum Internally</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>T</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="pricingshipping">
+          <label>Shipping</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>WEIGHT</id>
+              <label>Item Weight</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SHIPPACKAGE</id>
+              <label>Package</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SHIPINDIVIDUALLY</id>
+              <label>Ships Individually</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SHIPPINGCOST</id>
+              <label>Shipping Cost</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>HANDLINGCOST</id>
+              <label>Handling Cost</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PREFERENCECRITERION</id>
+              <label>Preference Criterion</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SCHEDULEBNUMBER</id>
+              <label>Schedule B Number</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SCHEDULEBQUANTITY</id>
+              <label>Schedule B Quantity</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SCHEDULEBCODE</id>
+              <label>Schedule B Code</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="pricing">
+          <label>Pricing</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>QUANTITYPRICINGSCHEDULE</id>
+              <label>Quantity Pricing Schedule</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>USEMARGINALRATES</id>
+              <label>Use Marginal Rates</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>OVERALLQUANTITYPRICINGTYPE</id>
+              <label>Calculate Quantity Discounts</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PRICINGGROUP</id>
+              <label>Pricing Group</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMPRICE</id>
+          <label>Price Levels</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMACCOUNTING</id>
+      <label>Accounting</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <fieldGroup scriptid="accounts">
+          <label>Accounts</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>CURRENCY</id>
+              <label>Currency</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>COGSACCOUNT</id>
+              <label>COGS Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>INTERCOCOGSACCOUNT</id>
+              <label>Intercompany COGS Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ASSETACCOUNT</id>
+              <label>Asset Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>INCOMEACCOUNT</id>
+              <label>Income Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>INTERCOINCOMEACCOUNT</id>
+              <label>Intercompany Income Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>UPDATEEXISTINGTRANACCOUNTS</id>
+              <label>Update COGS and Asset accounts on existing transactions when accounts are changed</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>GAINLOSSACCOUNT</id>
+              <label>Gain/Loss Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>BILLPRICEVARIANCEACCT</id>
+              <label>Price Variance Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>BILLQTYVARIANCEACCT</id>
+              <label>Quantity Variance Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>BILLEXCHRATEVARIANCEACCT</id>
+              <label>Exchange Rate Variance Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>CUSTRETURNVARIANCEACCOUNT</id>
+              <label>Customer Return Variance Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>VENDRETURNVARIANCEACCOUNT</id>
+              <label>Vendor Return Variance Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="revenuerecognitionandamortization">
+          <label>Revenue Recognition and Amortization</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+        </fieldGroup>
+        <fieldGroup scriptid="taxtariff">
+          <label>Tax /Tariff </label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>TAXSCHEDULE</id>
+              <label>Tax Schedule</label>
+              <visible>T</visible>
+              <mandatory>T</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>DROPSHIPEXPENSEACCOUNT</id>
+              <label>Dropship Expense Account</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subTab>
+          <id>ITEMMATRIX</id>
+          <label>Matrix Items</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup>
+              <fields position="MIDDLE">
+                <field>
+                  <id>MATRIXITEMNAMETEMPLATE</id>
+                  <label>Matrix Item Name Template</label>
+                  <visible>T</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+              </fields>
+            </defaultFieldGroup>
+          </fieldGroups>
+          <subLists/>
+        </subTab>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMHAZMATDGOODS</id>
+      <label>Hazmat/Dangerous Goods</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>ITEMSTORE</id>
+      <label>Web Store</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <fieldGroup scriptid="webstoredisplay">
+          <label>Web Store Display</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>ISONLINE</id>
+              <label>Display in Website</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>PAGETITLE</id>
+              <label>Page Title</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOREDISPLAYNAME</id>
+              <label>Web Store Display Name</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOREDESCRIPTION</id>
+              <label>Web Store Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOREDETAILEDDESCRIPTION</id>
+              <label>Detailed Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>FEATUREDDESCRIPTION</id>
+              <label>Featured Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOREDISPLAYIMAGE</id>
+              <label>Item Display Image</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>STOREDISPLAYTHUMBNAIL</id>
+              <label>Item Display Thumbnail</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="specialsdisplay">
+          <label>Specials Display</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>ONSPECIAL</id>
+              <label>On Special</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SPECIALSDESCRIPTION</id>
+              <label>Specials Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="stockandpricingbehavior">
+          <label>Stock and Pricing Behavior</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>ISDONATIONITEM</id>
+              <label>Variable Amount</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SHOWDEFAULTDONATIONAMOUNT</id>
+              <label>Show Default Amount</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>MAXDONATIONAMOUNT</id>
+              <label>Maximum Variable Amount</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>DONTSHOWPRICE</id>
+              <label>Don't Show Price</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>NOPRICEMESSAGE</id>
+              <label>No Price Message</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <fieldGroup scriptid="searchengineandfeeds">
+          <label>Search Engine and Feeds</label>
+          <visible>T</visible>
+          <showTitle>T</showTitle>
+          <singleColumn>F</singleColumn>
+          <fields position="MIDDLE">
+            <field>
+              <id>URLCOMPONENT</id>
+              <label>URL Component</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>LOCATIONURLALIAS</id>
+              <label>URL Component</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>EXCLUDEFROMSITEMAP</id>
+              <label>Exclude From Sitemap</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>SITEMAPPRIORITY</id>
+              <label>Sitemap Priority</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </fieldGroup>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subTab>
+          <id>ITEMRELITEMS</id>
+          <label>Related Items</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup>
+              <fields position="MIDDLE">
+                <field>
+                  <id>RELATEDITEMSDESCRIPTION</id>
+                  <label>Related Items Description</label>
+                  <visible>T</visible>
+                  <mandatory>F</mandatory>
+                  <displayType>NORMAL</displayType>
+                  <columnBreak>F</columnBreak>
+                  <sameRowAsPrevious>F</sameRowAsPrevious>
+                </field>
+              </fields>
+            </defaultFieldGroup>
+          </fieldGroups>
+          <subLists/>
+        </subTab>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMRELRECORDS</id>
+      <label>Related Records</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMTRANSACTIONS</id>
+          <label>Transactions</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMCOMMUNICATION</id>
+      <label>Communication</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMEVENTS</id>
+          <label>Events</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMTASKS</id>
+          <label>Tasks</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMCALLS</id>
+          <label>Phone Calls</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMMEDIAITEM</id>
+          <label>Files</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMUSERNOTES</id>
+          <label>User Notes</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMPREFERENCES</id>
+      <label>Preferences</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>AVAILABLETOPARTNERS</id>
+              <label>Available to Adv. Partners</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>ITEMSYSTEMINFORMATION</id>
+      <label>System Information</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>ISINACTIVE</id>
+              <label>Inactive</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>DATECONVERTEDTOINV</id>
+              <label>Date Converted To Inventory</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ORIGINALITEMTYPE</id>
+              <label>Original Item Type</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>ORIGINALITEMSUBTYPE</id>
+              <label>Original Item SubType</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMSYSTEMNOTES</id>
+          <label>System Notes</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subTab>
+          <id>ITEMTRANSLATION</id>
+          <label>Translation</label>
+          <visible>T</visible>
+          <fieldGroups>
+            <defaultFieldGroup/>
+          </fieldGroups>
+          <subLists>
+            <subList>
+              <id>ITEMTRANSLATIONS</id>
+              <label>Translation</label>
+              <visible>T</visible>
+              <neverEmpty>F</neverEmpty>
+            </subList>
+          </subLists>
+        </subTab>
+        <subList>
+          <id>ITEMACTIVEWORKFLOWS</id>
+          <label>Active Workflows</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMWORKFLOWHISTORY</id>
+          <label>Workflow History</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMCUSTOM</id>
+      <label>Custom</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custitem_atlas_item_image]</id>
+              <label>Item Image</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_ava_udf2]</id>
+              <label>UDF2</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_ava_udf1]</id>
+              <label>UDF1</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_ava_taxcode]</id>
+              <label>AvaTax Taxcode</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_cps_bdc_lastupdatedbyimport]</id>
+              <label>Bill.com Last Updated By Import</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_nspbcs_item_planning_cat]</id>
+              <label>Item Planning Category</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_material_]</id>
+              <label>Material</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_dimensions_]</id>
+              <label>Dimensions (as shipped)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_harmonized_code_]</id>
+              <label>Harmonized Code (HS)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_overseas_hts_code_]</id>
+              <label>Overseas HTS Code</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_us_hts_code_]</id>
+              <label>US HTS Code</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_hazardous_material_]</id>
+              <label>Hazardous Material</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_rohs_compliant_]</id>
+              <label>RoHS Compliant</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_weight_]</id>
+              <label>Weight (as shipped)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_weight_uom_]</id>
+              <label>Weight UOM</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_customer_name_]</id>
+              <label>Customer Name</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_salesforce_account_id_]</id>
+              <label>Salesforce Account Id</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_end_user_]</id>
+              <label>Commodity Type</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_customer_revision_]</id>
+              <label>Customer Revision</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_customer_part_number_]</id>
+              <label>Customer Part Number</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_overseas_description_]</id>
+              <label>Overseas Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_expected_usage_]</id>
+              <label>Expected Usage</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_description_]</id>
+              <label>Description</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_oversea_expected_usage_]</id>
+              <label>Oversea Expected Usage</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_supplement_information_]</id>
+              <label>Supplement Information</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_st_oversea_supplement_informa]</id>
+              <label>Oversea Supplement Information</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[appid=com.suitesuccess.woaao, scriptid=custitem_atlas_woa_item_image]</id>
+              <label>Item Image (WOA)</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>[scriptid=custtab_310_t2228999_218]</id>
+      <label>Arena</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup>
+          <fields position="MIDDLE">
+            <field>
+              <id>[scriptid=custitem_arena_revision]</id>
+              <label>Arena Revision</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_uuid]</id>
+              <label>Arena UUID</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_category_name]</id>
+              <label>Arena Category</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_change_number]</id>
+              <label>Arena Change Number</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_effective_date_time]</id>
+              <label>Arena Effective Date Time</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_lifecycle_phase]</id>
+              <label>Arena Lifecycle Phase</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>NORMAL</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_wr_guid]</id>
+              <label>Arena WR Guid</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+            <field>
+              <id>[scriptid=custitem_arena_rev_integ_done]</id>
+              <label>Rev Integrated</label>
+              <visible>T</visible>
+              <mandatory>F</mandatory>
+              <displayType>DISABLED</displayType>
+              <columnBreak>F</columnBreak>
+              <sameRowAsPrevious>F</sameRowAsPrevious>
+            </field>
+          </fields>
+        </defaultFieldGroup>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>[scriptid=customrecord_new_arena_item.custrecord_new_arena_item_nsitem]</id>
+          <label>Incoming Arena Items</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>[scriptid=customrecord_arena_item_sourcing.custrecord_arena_item_sourcing_nsitem]</id>
+          <label>Arena Item Sourcing</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+    <tab>
+      <id>ITEMINVENTORYDETAIL</id>
+      <label>Inventory Detail</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems>
+        <subList>
+          <id>ITEMINVENTORYDETAILSRCH</id>
+          <label>Inventory Detail</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMBINNUMBERSEARCH</id>
+          <label>Bin Numbers</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMINVENTORYNUMBERSRCH</id>
+          <label>Inventory Numbers</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+        <subList>
+          <id>ITEMINVENTORYSTATUSSRCH</id>
+          <label>Inventory Statuses</label>
+          <visible>T</visible>
+          <neverEmpty>F</neverEmpty>
+        </subList>
+      </subItems>
+    </tab>
+  </tabs>
+  <quickViewFields>
+    <field>
+      <id>ITEMID</id>
+    </field>
+    <field>
+      <id>DISPLAYNAME</id>
+    </field>
+    <field>
+      <id>SALESDESCRIPTION</id>
+    </field>
+    <field>
+      <id>PARENT</id>
+    </field>
+    <field>
+      <id>UNITSTYPE</id>
+    </field>
+    <field>
+      <id>RATE</id>
+    </field>
+    <field>
+      <id>QUANTITYAVAILABLE</id>
+    </field>
+  </quickViewFields>
+  <actionbar>
+    <buttons>
+      <button>
+        <id>PRINTLABEL</id>
+        <label>Print Label</label>
+        <visible>T</visible>
+      </button>
+      <button>
+        <id>SEARCH</id>
+        <label>Search</label>
+        <visible>T</visible>
+      </button>
+    </buttons>
+    <menu>
+      <menuitem>
+        <id>ADDMATRIX</id>
+        <label>Add Items</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>CREATEMATRIX</id>
+        <label>Create Matrix</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>DELETE</id>
+        <label>Delete</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>MAKECOPY</id>
+        <label>Make Copy</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>NEW</id>
+        <label>New</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>REMOVEMATRIXOPTIONS</id>
+        <label>Remove Matrix Options</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>SUBMITNEW</id>
+        <label>Save &amp; New</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>SUBMITAS</id>
+        <label>Save As</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>UPDATEMATRIX</id>
+        <label>Update Matrix</label>
+        <visible>T</visible>
+      </menuitem>
+      <menuitem>
+        <id>VIEWALLTRANSACTIONS</id>
+        <label>View All Transactions</label>
+        <visible>T</visible>
+      </menuitem>
+    </menu>
+  </actionbar>
+  <editingInList>T</editingInList>
+</entryForm>

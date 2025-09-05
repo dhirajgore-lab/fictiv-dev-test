@@ -1,0 +1,62 @@
+<centertab scriptid="custcentertab7_2">
+  <allcustomers>F</allcustomers>
+  <allemployees>T</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>[scriptid=customrole_3805_dunning_director]|[scriptid=customrole_3805_dunning_manager]</audslctrole>
+  <center>[scriptid=custcenter1_2]</center>
+  <label translate="T">[scriptid=custcollection_dl_translations.cent_tab_7_dunning_label]</label>
+  <portlets>
+    <portlet scriptid="portlet_55_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_65_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_62_3956802_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_74_3956802_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_66_3956802_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_59_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_63_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_73_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_57_3956802_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_75_3956802_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

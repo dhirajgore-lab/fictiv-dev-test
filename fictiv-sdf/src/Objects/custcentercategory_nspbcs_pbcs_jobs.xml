@@ -1,0 +1,31 @@
+<centercategory scriptid="custcentercategory_nspbcs_pbcs_jobs">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_pbcs]</centertab>
+  <label translate="T">[scriptid=custcollection_nspb_translation.mnu_jobs]</label>
+  <links>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_job_calendar]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_job_calendar.customdeploy_nspbcs_sl_job_calendar]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_manage_jobs]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_dlr_management.customdeploy_nspbcs_sl_dlr_management]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_activity_logs]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_activity_logs.customdeploy_nspbcs_sl_activity_logs_v2]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_conn_settings]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_epm_config.customdeploy_nspbcs_sl_epm_config]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

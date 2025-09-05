@@ -1,0 +1,273 @@
+<?xml version="1.0"?>
+<!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head>
+  <link name="NotoSans" type="font" subtype="truetype" src="${nsfont.NotoSans_Regular}" 
+        src-bold="${nsfont.NotoSans_Bold}" src-italic="${nsfont.NotoSans_Italic}" 
+        src-bolditalic="${nsfont.NotoSans_BoldItalic}" bytes="2" />
+  <#if .locale == "zh_CN">
+    <link name="NotoSansCJKsc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKsc_Regular}" 
+          src-bold="${nsfont.NotoSansCJKsc_Bold}" bytes="2" />
+  <#elseif .locale == "zh_TW">
+    <link name="NotoSansCJKtc" type="font" subtype="opentype" src="${nsfont.NotoSansCJKtc_Regular}" 
+          src-bold="${nsfont.NotoSansCJKtc_Bold}" bytes="2" />
+  <#elseif .locale == "ja_JP">
+    <link name="NotoSansCJKjp" type="font" subtype="opentype" src="${nsfont.NotoSansCJKjp_Regular}" 
+          src-bold="${nsfont.NotoSansCJKjp_Bold}" bytes="2" />
+  <#elseif .locale == "ko_KR">
+    <link name="NotoSansCJKkr" type="font" subtype="opentype" src="${nsfont.NotoSansCJKkr_Regular}" 
+          src-bold="${nsfont.NotoSansCJKkr_Bold}" bytes="2" />
+  <#elseif .locale == "th_TH">
+    <link name="NotoSansThai" type="font" subtype="opentype" src="${nsfont.NotoSansThai_Regular}" 
+          src-bold="${nsfont.NotoSansThai_Bold}" bytes="2" />
+  </#if>
+
+  <macrolist>
+    <macro id="nlheader">
+      <table style="width: 100%; font-size: 10pt;">
+        <tr border-bottom="1px solid black">
+          <td rowspan="3" style="padding: 0;">
+            <#if companyInformation.logoUrl?length != 0>
+              <@filecabinet nstype="image" style="float: left; margin: 7px" width="70%" height="80%" src="${companyInformation.logoUrl}" />
+            </#if>
+          </td>
+          <td align="right" style="padding: 0;" vertical-align="bottom">
+            <span style="font-size: 10pt; margin-bottom:5px">Build better hardware</span>
+          </td>
+        </tr>
+      </table>
+    </macro>
+    <macro id="nlfooter">
+      <table style="width: 100%; font-size: 8pt;">
+        <tr>
+          <td align="center" style="padding: 0;">
+            <pagenumber/> of <totalpages/>
+          </td>
+        </tr>
+      </table>
+    </macro>
+  </macrolist>
+
+  <style>
+    * {
+      <#if .locale == "zh_CN">
+        font-family: NotoSans, NotoSansCJKsc, sans-serif;
+      <#elseif .locale == "zh_TW">
+        font-family: NotoSans, NotoSansCJKtc, sans-serif;
+      <#elseif .locale == "ja_JP">
+        font-family: NotoSans, NotoSansCJKjp, sans-serif;
+      <#elseif .locale == "ko_KR">
+        font-family: NotoSans, NotoSansCJKkr, sans-serif;
+      <#elseif .locale == "th_TH">
+        font-family: NotoSans, NotoSansThai, sans-serif;
+      <#else>
+        font-family: NotoSans, sans-serif;
+      </#if>
+    }
+    table {
+      font-size: 9pt;
+      table-layout: fixed;
+    }
+    th {
+      font-weight: bold;
+      font-size: 8pt;
+      vertical-align: middle;
+      padding: 5px 6px 3px;
+      background-color: #e3e3e3;
+      color: #333333;
+    }
+    td {
+      padding: 4px 6px;
+    }
+    td p { align:left }
+  </style>
+</head>
+
+<body header="nlheader" header-height="7%" footer="nlfooter" footer-height="20pt" 
+      padding="0.2in 0.5in 0.5in 0.5in" size="Letter">
+
+  <!-- Address & Order Info + Yellow Box -->
+  <table style="width: 100%; border-collapse: collapse; margin-bottom: 10px;">
+    <tr>
+      <td style="width: 50%; vertical-align: top; padding: 10px;">
+        <span>${subsidiary.mainaddress_text} </span><br /><br />For all other inquiries <br />email - ${record.salesrep.email}
+      </td>
+      <td style="width: 50%; vertical-align: top; padding: 10px;">
+  <table style="width: 100%; line-height: 40%; font-size: 9pt;">
+    <tr><td align="right">Order ID: ${record.tranid}</td></tr>
+    <tr><td align="right">Payment Terms: ${record.terms}</td></tr>
+    <!-- <tr><td align="right">PO number: ${record.otherrefnum}</td></tr> -->
+    <tr><td align="right">Order Placed: ${record.trandate}</td></tr>
+    <tr><td align ="right">Cust PO No: ${record.custbody_st_customer_po_number}</td></tr>
+  </table>
+</td>
+
+
+    </tr>
+  </table>
+
+  <table style="width: 100%; margin-top: 10px;">
+  <tr>
+    <!-- Left Yellow Box: Bill To & Ship To -->
+    <td style="width: 65%; vertical-align: top;  padding: 10px;">
+      <table style="width: 100%;">
+        <tr>
+          <td style="font-weight: bold;">Bill To:</td>
+          <td style="font-weight: bold;">Ship To:</td>
+        </tr>
+        <tr>
+          <td style="vertical-align: top;">
+            ${record.billaddress}
+          </td>
+          <td style="vertical-align: top;">
+            ${record.shipaddress}
+          </td>
+        </tr>
+      </table>
+    </td>
+
+    <!-- Right Gray Box: Note -->
+    <td style="width: 35%; vertical-align: top;  padding: 10px;">
+      <!-- <span style="font-weight: bold;">
+        For details on shipment methods and estimated delivery dates, please see the shipment section below
+      </span> -->
+    </td>
+  </tr>
+</table>
+
+
+ 
+
+  <!-- Payment & Shipping Info -->
+  <!-- <table style="width: 100%; margin-top: 10px;">
+    <tr>
+      <th>Pay</th>
+      <th>${record.otherrefnum@label}</th>
+      <th>${record.shipmethod@label}</th>
+      <th>${record.shipdate@label}</th>
+    </tr>
+    <tr>
+      <td>${record.paymentmethod}</td>
+      <td>${record.otherrefnum}</td>
+      <td>${record.shipmethod}</td>
+      <td>${record.shipdate}</td>
+    </tr>
+  </table> -->
+<!-- <table width="100%"><thead><tr>
+        <th width="60%">SUMMARY OF ORDER</th>
+        <th width="20%" align="right">ORDER TOTAL</th>
+        <th width="20%" align="right">${record.total}</th>
+    </tr></thead>
+</table> -->
+  <!-- Items -->
+  <#if record.item?has_content>
+    <table style="width: 100%; margin-top: 10px;">
+      <#list record.item as item>
+        <#if item_index == 0>
+          <thead>
+            <tr>
+              
+              
+              <th colspan ="4"><p align="left">Customer P/N</p></th>
+              <th colspan ="2"><p align="left">Cust Rev.</p></th>
+              <th colspan="5" align="left">Fictiv P/N</th>
+              <th colspan ="2"><p align="left">Fictiv Rev.</p></th>
+              <!-- <th colspan = "3"><p align ="left">${item.custcol_st_shippingcost_@label}</p></th> -->
+              <th colspan="3" align="left">${item.custcol_st_ship_date@label}</th>
+              <th colspan="3" align="left">${item.quantity@label}</th>
+              <th colspan="2" align="left"><p align="left">${item.taxrate1@label}</p></th>
+              <th colspan="3" align="right">Unit Price</th>
+              <th colspan="4" align="right">${item.amount@label}</th>
+            </tr>
+          </thead>
+        </#if>
+        <tr>
+          
+          <td colspan="4"><p align="left">${item.custcol_st_customer_part}</p></td>
+          <td colspan="2">${item.custcol_st_customer_revision}</td>
+          <td colspan="5" align="left">${item.custcol_ava_item}</td>
+          <td colspan="2" align="left">${item.custcol_st_arena_revision_}</td>
+          <!-- <td colspan = "3"><p align ="left">${item.custcol_st_shippingcost_}</p></td> -->
+          <td colspan="3" align="left">${item.custcol_st_ship_date}</td>
+          <td colspan="3" align="left">${item.quantity}</td>
+          <td colspan="2" align="left"><p align="left">${item.taxrate1}</p></td>
+          <td colspan="3" align="right">${item.rate}</td>
+          <td colspan="4" align="right">${item.amount}</td>
+        </tr>
+      </#list>
+    </table>
+    <hr style="width: 100%; color: #d3d3d3; background-color: #d3d3d3; height: 1px;" />
+  </#if>
+
+  <!-- Totals -->
+  <table style="page-break-inside: avoid; width: 100%; margin-top: 20px;">
+    <tr>
+      <td colspan="4"></td>
+      <td align="right" style="font-weight: bold; color: #333333;">${record.subtotal@label}</td>
+      <td align="right">${record.subtotal}</td>
+    </tr>
+    <!-- <tr>
+      <td colspan="4"></td>
+      <td align="right" style="font-weight: bold; color: #333333;">${record.shippingcost@label}</td>
+      <td align="right">${record.shippingcost}</td>
+    </tr> -->
+    <tr>
+      <td colspan="4"></td>
+      <td align="right" style="font-weight: bold; color: #333333;">${record.discounttotal@label}</td>
+      <td align="right">${record.discounttotal}</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td align="right" style="font-weight: bold; color: #333333;">${record.taxtotal@label} (${record.taxrate}%)</td>
+      <td align="right">${record.taxtotal}</td>
+    </tr>
+    <tr style="background-color: #e3e3e3; line-height: 200%;">
+      <td colspan="4"></td>
+      <td align="right" style="font-weight: bold; color: #333333;">${record.total@label}</td>
+      <td align="right">${record.total}</td>
+    </tr>
+  </table>
+
+
+<table width="100%">
+  <thead>
+    <tr>
+      <th>TERMS AND CONDITIONS</th>
+    </tr>
+  </thead>
+  <tr>
+    <td>
+      1. <b>Terms of Sale:</b> The Terms and Conditions of Sale outlined on Fictiv’s website (<a href="https://www.fictiv.com/terms">https://www.fictiv.com/terms</a>) govern all sales made by Fictiv for any products or services, and supersede any terms or conditions on Customer-provided Purchase Order (“PO”), or other form document exchanged between the parties. The price and delivery commitments made by Fictiv are conditioned upon Customer’s acceptance of Fictiv’s Terms and Conditions of Sale. Accordingly, Customer acknowledges and agrees that Fictiv accepts Customer’s PO on the express condition that Fictiv’s Terms and Conditions of Sale apply to the transaction, and any terms or conditions on Customer’s PO, other than description of the Product or Service, and their quantity, price and delivery date, are deemed rejected and are to be ignored unless the identical terms describing the product, service or the performance related thereto appear on this Quote.<br/><br/>
+
+      2. <b>Shipping Terms (Incoterms):</b> Fictiv’s shipping terms are either Ex Works or Delivered Duty Paid. The shipping terms for your order will be determined by the value of overseas manufactured parts and their designated end use (prototype or commercial). Any quote provided pre-sale for shipping is solely budgetary and Fictiv is not liable for any variance between the quoted shipping cost and the final cost incurred by the Buyer. Any delays due to insufficient information provided for international shipping must be resolved by the Buyer. For all orders being shipped to Canada, the customer must serve as importer of record and Ex-Works (EXW) will be used as the INCOTERM for import.<br/><br/>
+
+      <u>Ex Works:</u> Ex Works shipping terms are from the Fictiv facility closest to the manufacturer or the Fictiv subcontractor point of manufacture. The buyer will be the Importer of Record and therefore responsible for all shipping liabilities and costs to the final destination, including any import duties incurred.<br/><br/>
+
+      <u>Delivered Duty Paid:</u> Fictiv will act as the importer of record. Buyer will not be responsible for any import duties incurred for orders containing exclusively “prototype” parts. Buyer is responsible for all shipping costs to the final destination, excluding any import duties incurred. If an order classified as exclusively containing “prototype” parts is later determined to contain “production” or “commercial / end-use” parts, Buyer will be responsible for any and all customs duties and tariffs incurred by Fictiv in processing the order, as well as any and all shipping charges incurred.<br/><br/>
+
+      3. <b>Lead Time:</b> Lead time is defined as production days following submission of both approved payment method and designs adhering to Fictiv’s design for manufacturability feedback, which may be provided to the customer after the quotation.<br/><br/>
+
+      4. <b>Engineering Change Orders:</b> Any changes to the quote in material, quantity, part design, or engineering drawing will require Fictiv to assess the cost and lead time impact of the customer’s desired changes and will correspondingly require a new request for quote.<br/><br/>
+
+      5. <b>End Use / Application:</b> Unless otherwise agreed upon with Fictiv in writing prior to placing an order, any components to be manufactured through Fictiv are for R&amp;D use only (bench testing / up to DVT). Not for use in clinical trials or human contact. Not for use in end-use parts to be sold or distributed to consumers. Not for use in the manufacture of other equipment or products.<br/><br/>
+
+      6. <b>Tolerance Standard:</b> For parts requiring tolerances tighter than our ISO 2768 medium standard, a drawing with tolerance specifications must be uploaded and associated with the part in the quotation.
+    </td>
+  </tr>
+</table>
+<br />
+<#if record.custbody_st_notes?has_content>
+<table width="100%">
+    <thead>
+        <tr>
+            <th>Notes</th>
+        </tr>
+    </thead>
+    <tr>
+        <td>${record.custbody_st_notes}</td>
+    </tr>
+</table>
+</#if>
+
+</body>
+</pdf>

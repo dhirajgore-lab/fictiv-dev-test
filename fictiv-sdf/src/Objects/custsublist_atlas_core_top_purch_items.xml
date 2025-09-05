@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_top_purch_items">
+  <contact>F</contact>
+  <customer>F</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>Top Purchased Items</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_vdr_top_items_sblist]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_vendor360]</tab>
+  <vendor>T</vendor>
+</sublist>

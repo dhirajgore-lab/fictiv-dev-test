@@ -1,0 +1,10 @@
+<translationcollection scriptid="custcollectiontranslations_dataset_5_10814fb748264f0cbac746">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_5_10814fb748264f0cbac746.dataset_name_32_2]</name>
+  <strings>
+    <string scriptid="dataset_name_32_2">
+      <defaulttranslation>Transaction Dataset</defaulttranslation>
+      <description>Name in dataset</description>
+    </string>
+  </strings>
+</translationcollection>

@@ -1,0 +1,57 @@
+<workflow scriptid="customworkflow1">
+  <description></description>
+  <initcontexts></initcontexts>
+  <initeventtypes></initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>T</initoncreate>
+  <initonvieworupdate>T</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype></inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>F</islogenabled>
+  <keephistory>ONLYWHENTESTING</keephistory>
+  <name>Odoo Sales Order</name>
+  <recordtypes>INVOICE</recordtypes>
+  <releasestatus>SUSPENDED</releasestatus>
+  <runasadmin>F</runasadmin>
+  <initcondition>
+    <formula></formula>
+    <type>VISUAL_BUILDER</type>
+  </initcondition>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate1">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 1</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <setfieldvalueaction scriptid="workflowaction1">
+          <clienttriggerfields></clienttriggerfields>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes>APPROVE|CANCEL|COPY|CREATE|DELETE|XEDIT|EDIT|EMAIL|MARKCOMPLETE|ORDERITEMS|PAYBILLS|PRINT|REJECT|VIEW</eventtypes>
+          <field>[scriptid=custbody_f3_odoo_name]</field>
+          <isinactive>F</isinactive>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <valuechecked>F</valuechecked>
+          <valuedate></valuedate>
+          <valuefield>[scriptid=custbody_f3_odoo_so]</valuefield>
+          <valueformula></valueformula>
+          <valuejoinfield></valuejoinfield>
+          <valueselect></valueselect>
+          <valuetext></valuetext>
+          <valuetype>FIELD</valuetype>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </setfieldvalueaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

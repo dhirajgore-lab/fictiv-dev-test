@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_f3_so_global_search">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>SO in Global Search</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_so_global_search_ss.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_so_global_search">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>SO in Global Search</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2023-11-22</startdate>
+          <starttime>02:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

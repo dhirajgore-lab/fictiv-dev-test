@@ -1,0 +1,14 @@
+<translationcollection scriptid="custcollectiontranslations_dataset_6_f217d825175f4d73a2265b">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_6_f217d825175f4d73a2265b.dataset_name_34_2]</name>
+  <strings>
+    <string scriptid="dataset_field_34_1">
+      <defaulttranslation>Vendor</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_name_34_2">
+      <defaulttranslation>PO Dataset - Expected Received Date</defaulttranslation>
+      <description>Name in dataset</description>
+    </string>
+  </strings>
+</translationcollection>

@@ -1,0 +1,67 @@
+<centertab scriptid="custcentertab21">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter1]</center>
+  <label>Leads &amp; Prospects</label>
+  <portlets>
+    <portlet scriptid="portlet_289_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_286_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHFORM</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_291_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>QUICKADD</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_296_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_298_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_297_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>REMINDERS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_299_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_292_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>LIST</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_300_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_309_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_306_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

@@ -1,0 +1,64 @@
+<suitelet scriptid="customscript_avagettaxhistory_suitelet">
+  <defaultfunction>AVA_ViewTaxDetails</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_GetTaxHistory_Suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_gettaxhistoryroleid">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>T</ismandatory>
+      <label>Role ID</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_gettaxhistory">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>T</allroles>
+      <audslctrole>CUSTOMER_CENTER|EMPLOYEE_CENTER|NETSUITE_SUPPORT_CENTER|NETSUITE_SUPPORT_CENTER__BASIC|ONLINE_FORM_USER|PARTNER_CENTER|VENDOR_CENTER</audslctrole>
+      <custscript_gettaxhistoryroleid>1,2,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31</custscript_gettaxhistoryroleid>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>AvaTax GetTaxHistory</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</suitelet>

@@ -1,0 +1,52 @@
+<centertab scriptid="custcentertab23">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter1]</center>
+  <label>Opportunities</label>
+  <portlets>
+    <portlet scriptid="portlet_342_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_338_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>QUICKADD</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_344_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>RECENTRECORDS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_351_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_354_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>REMINDERS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_352_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>LIST</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_340_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_358_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

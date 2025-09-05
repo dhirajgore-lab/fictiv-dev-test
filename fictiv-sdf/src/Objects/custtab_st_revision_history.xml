@@ -1,0 +1,5 @@
+<subtab scriptid="custtab_st_revision_history">
+  <parent>[scriptid=custtab_st_revised_order]</parent>
+  <tabtype>TRANSACTION</tabtype>
+  <title>Revision History</title>
+</subtab>

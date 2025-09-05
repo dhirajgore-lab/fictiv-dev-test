@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_scriptprocessstatus">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>脚本处理状态</name>
+  <customvalues>
+    <customvalue scriptid="val_17894_2275882_769">
+      <abbreviation>处</abbreviation>
+      <isinactive>F</isinactive>
+      <value>处理成功</value>
+    </customvalue>
+    <customvalue scriptid="val_17895_2275882_214">
+      <abbreviation>处</abbreviation>
+      <isinactive>F</isinactive>
+      <value>处理失败</value>
+    </customvalue>
+    <customvalue scriptid="val_17896_2275882_638">
+      <abbreviation>处</abbreviation>
+      <isinactive>F</isinactive>
+      <value>处理中</value>
+    </customvalue>
+  </customvalues>
+</customlist>

@@ -1,0 +1,39 @@
+<customlist scriptid="customlist_ns_search_summary_operators">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>NS Search Summary Operators</name>
+  <customvalues>
+    <customvalue scriptid="val_98163_t2228999_435">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Group</value>
+    </customvalue>
+    <customvalue scriptid="val_98164_t2228999_904">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Count</value>
+    </customvalue>
+    <customvalue scriptid="val_98165_t2228999_328">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Sum</value>
+    </customvalue>
+    <customvalue scriptid="val_98166_t2228999_191">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Minimum</value>
+    </customvalue>
+    <customvalue scriptid="val_98167_t2228999_777">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Maximum</value>
+    </customvalue>
+    <customvalue scriptid="val_98168_t2228999_417">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Average</value>
+    </customvalue>
+  </customvalues>
+</customlist>

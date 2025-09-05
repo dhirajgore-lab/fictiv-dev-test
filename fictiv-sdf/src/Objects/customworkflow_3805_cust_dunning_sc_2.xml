@@ -1,0 +1,55 @@
+<workflow scriptid="customworkflow_3805_cust_dunning_sc_2">
+  <description></description>
+  <initcontexts></initcontexts>
+  <initeventtypes></initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>F</initoncreate>
+  <initonvieworupdate>F</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <initsavedsearchfilter>[scriptid=customsearch_base_dunning_customer_2]</initsavedsearchfilter>
+  <inittriggertype></inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>F</islogenabled>
+  <keephistory>ALWAYS</keephistory>
+  <name>Fictiv Customer Dunning WF Scheduler</name>
+  <recordtypes>CUSTOMER</recordtypes>
+  <releasestatus>RELEASED</releasestatus>
+  <runasadmin>F</runasadmin>
+  <recurrence>
+    <every30minutes>
+      <enddate></enddate>
+      <startdate>2023-12-20</startdate>
+    </every30minutes>
+  </recurrence>
+  <initcondition>
+    <formula></formula>
+    <type>VISUAL_BUILDER</type>
+  </initcondition>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate7">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>Evaluate Customer Dunning</name>
+      <positionx>200</positionx>
+      <positiony>50</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <initiateworkflowaction scriptid="workflowaction10">
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes></contexttypes>
+          <eventtypes></eventtypes>
+          <initiatedworkflow>[scriptid=customworkflow_3805_dp_eval_cust]</initiatedworkflow>
+          <isinactive>F</isinactive>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </initiateworkflowaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

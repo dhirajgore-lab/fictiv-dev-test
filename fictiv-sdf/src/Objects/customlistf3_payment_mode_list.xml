@@ -1,0 +1,24 @@
+<customlist scriptid="customlistf3_payment_mode_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Payment Mode List</name>
+  <customvalues>
+    <customvalue scriptid="val_768533_4541795_455">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Feidi</value>
+    </customvalue>
+    <customvalue scriptid="val_768534_4541795_646">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Fictiv</value>
+    </customvalue>
+    <customvalue scriptid="val_1491752_4541795_295">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Fidia</value>
+    </customvalue>
+  </customvalues>
+</customlist>

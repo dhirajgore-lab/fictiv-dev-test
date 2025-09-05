@@ -1,0 +1,10 @@
+<restlet scriptid="customscript420">
+  <description></description>
+  <isinactive>T</isinactive>
+  <name>Ramp Integration API Inactive</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteScripts/ramp_restlet.js]</scriptfile>
+</restlet>

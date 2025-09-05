@@ -1,0 +1,113 @@
+<scheduledscript scriptid="customscript_f3_system_log_email">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>System Log Schedule Email</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/Folio3/SystemLogReport/schedule/f3_system_log_ss.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_f3_start_date">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>DATE</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Start Date</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscriptf3_end_date">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>DATE</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>End Date</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy3">
+      <custscript_f3_start_date></custscript_f3_start_date>
+      <custscriptf3_end_date></custscriptf3_end_date>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>System Log Schedule Email</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2023-06-09</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_f3_system_log_6month_email">
+      <custscript_f3_start_date>2023-05-31</custscript_f3_start_date>
+      <custscriptf3_end_date>2023-06-18</custscriptf3_end_date>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>System Log Last 6 Months Email</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2023-06-09</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_f3_system_log_daily_email">
+      <custscript_f3_start_date></custscript_f3_start_date>
+      <custscriptf3_end_date></custscriptf3_end_date>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>System Log Daily Email</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat></repeat>
+          <startdate>2023-06-01</startdate>
+          <starttime>13:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

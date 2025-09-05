@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory7_3">
+  <center>[scriptid=custcenter1_2]</center>
+  <centertab>[scriptid=custcentertab7_2]</centertab>
+  <label>Letters</label>
+  <links>
+    <link>
+      <linklabel>Email</linklabel>
+      <linkobject>[scriptid=customscript_3805_su_dunning_queue_ss2.customdeploy_3805_dunning_queue_email]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>PDF</linklabel>
+      <linkobject>[scriptid=customscript_3805_su_dunning_queue_ss2.customdeploy_3805_dunning_queue_pdf]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

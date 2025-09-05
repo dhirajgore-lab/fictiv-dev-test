@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory_arena_list">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_arena_integration_tab]</centertab>
+  <label>Monitor Integration Activity</label>
+  <links>
+    <link>
+      <linklabel>Incoming Arena Items</linklabel>
+      <linkobject>[scriptid=customrecord_new_arena_item]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Arena Fetch History</linklabel>
+      <linkobject>[scriptid=customrecord_arena_api_integration_logs]</linkobject>
+      <linktasktype>LIST</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

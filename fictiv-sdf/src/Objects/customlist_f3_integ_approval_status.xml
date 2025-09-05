@@ -1,0 +1,54 @@
+<customlist scriptid="customlist_f3_integ_approval_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Integration Approval Status</name>
+  <customvalues>
+    <customvalue scriptid="val_7155_4541795_486">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Pending Approval</value>
+    </customvalue>
+    <customvalue scriptid="val_7156_4541795_935">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Approved</value>
+    </customvalue>
+    <customvalue scriptid="val_7204_4541795_179">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Processed</value>
+    </customvalue>
+    <customvalue scriptid="val_7205_4541795_941">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Error</value>
+    </customvalue>
+    <customvalue scriptid="val_7249_4541795_619">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Unknown Email</value>
+    </customvalue>
+    <customvalue scriptid="val_7255_4541795_713">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Unknown Payment Method</value>
+    </customvalue>
+    <customvalue scriptid="val_7256_4541795_414">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Unknown Item</value>
+    </customvalue>
+    <customvalue scriptid="val_961715_4541795_205">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>ECO Update Fail</value>
+    </customvalue>
+    <customvalue scriptid="val_1254463_4541795_884">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>Unknown Contact</value>
+    </customvalue>
+  </customvalues>
+</customlist>

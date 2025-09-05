@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_invaid">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>付款申请类型（弃用）</name>
+  <customvalues>
+    <customvalue scriptid="val_14086_2275882_672">
+      <abbreviation>合</abbreviation>
+      <isinactive>F</isinactive>
+      <value>合同预付款</value>
+    </customvalue>
+    <customvalue scriptid="val_14087_2275882_575">
+      <abbreviation>提</abbreviation>
+      <isinactive>F</isinactive>
+      <value>提货前付款</value>
+    </customvalue>
+    <customvalue scriptid="val_14088_2275882_897">
+      <abbreviation>提</abbreviation>
+      <isinactive>F</isinactive>
+      <value>提货后付款</value>
+    </customvalue>
+    <customvalue scriptid="val_14310_2275882_697">
+      <abbreviation>发</abbreviation>
+      <isinactive>F</isinactive>
+      <value>发票款</value>
+    </customvalue>
+  </customvalues>
+</customlist>

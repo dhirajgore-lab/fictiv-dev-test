@@ -1,0 +1,59 @@
+<customlist scriptid="customlist_st_revision_reason">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Revision Reason</name>
+  <customvalues>
+    <customvalue scriptid="val_2021648_4541795_406">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Address Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021649_4541795_633">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Schedule Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021650_4541795_435">
+      <abbreviation>F</abbreviation>
+      <isinactive>F</isinactive>
+      <value>File Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021651_4541795_929">
+      <abbreviation>Q</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Quantity Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021652_4541795_289">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Process Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021653_4541795_339">
+      <abbreviation>E</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Expedite</value>
+    </customvalue>
+    <customvalue scriptid="val_2021654_4541795_376">
+      <abbreviation>R</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Remove Line Items</value>
+    </customvalue>
+    <customvalue scriptid="val_2021655_4541795_131">
+      <abbreviation>A</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Add Line Items</value>
+    </customvalue>
+    <customvalue scriptid="val_2021656_4541795_863">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Price Change</value>
+    </customvalue>
+    <customvalue scriptid="val_2021657_4541795_592">
+      <abbreviation>O</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Other</value>
+    </customvalue>
+  </customvalues>
+</customlist>

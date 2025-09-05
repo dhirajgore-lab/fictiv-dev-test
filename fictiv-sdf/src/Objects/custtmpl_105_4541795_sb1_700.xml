@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_105_4541795_sb1_700" standard="STDTMPLCUSTINVC">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>FTS Pune Invoice PDF/HTML Template</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

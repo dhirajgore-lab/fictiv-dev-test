@@ -1,0 +1,71 @@
+<transactionbodycustomfield scriptid="custbody1">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <bodyassemblybuild>F</bodyassemblybuild>
+  <bodybom>F</bodybom>
+  <bodycustomerpayment>F</bodycustomerpayment>
+  <bodycustomtransactions></bodycustomtransactions>
+  <bodydeposit>F</bodydeposit>
+  <bodydepositapplication>F</bodydepositapplication>
+  <bodyinventoryadjustment>F</bodyinventoryadjustment>
+  <bodyitemfulfillment>F</bodyitemfulfillment>
+  <bodyitemfulfillmentorder>F</bodyitemfulfillmentorder>
+  <bodyitemreceipt>F</bodyitemreceipt>
+  <bodyitemreceiptorder>F</bodyitemreceiptorder>
+  <bodyjournal>F</bodyjournal>
+  <bodyothertransaction>F</bodyothertransaction>
+  <bodypickingticket>F</bodypickingticket>
+  <bodyprintflag>F</bodyprintflag>
+  <bodyprintpackingslip>F</bodyprintpackingslip>
+  <bodyprintstatement>F</bodyprintstatement>
+  <bodypurchase>F</bodypurchase>
+  <bodysale>T</bodysale>
+  <bodytransferorder>F</bodytransferorder>
+  <bodyvendorpayment>F</bodyvendorpayment>
+  <bodyvendorprepayment>F</bodyvendorprepayment>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue>*** CHECK REMITTANCE ADDRESS ***&#xd;
+FICTIV INC&#xd;
+DEPT LA 22871&#xd;
+PASADENA CA 91185-2871&#xd;
+&#xd;
+*** ACH REMITTANCE ***&#xd;
+TO: Silicon Valley Bank&#xd;
+ROUTING &amp; TRANSIT #: 121140399&#xd;
+FOR THE CREDIT OF: Fictiv Inc.&#xd;
+CREDIT ACCOUNT #: 3302224629</defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>NORMAL</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <enabletextenhance>F</enabletextenhance>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>TEXTAREA</fieldtype>
+  <fldsizelabel></fldsizelabel>
+  <globalsearch>F</globalsearch>
+  <help></help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <isparent>F</isparent>
+  <label>Remittance</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete></onparentdelete>
+  <parentsubtab></parentsubtab>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+  <subtab></subtab>
+</transactionbodycustomfield>

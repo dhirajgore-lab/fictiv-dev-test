@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_405_4541795_574" standard="STDTMPLCUSTINVC">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Mexico Invoice PDF/HTML Template</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

@@ -1,0 +1,30 @@
+<mapreducescript scriptid="customscript_hpi_inv_notice_approve_mr">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>采购开票平台通知单审批mr</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 374134/com.douplestech.batchbilling/src/component/mr/hpi_inv_notice_approve_mr.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_hpi_inv_notice_approve_mr">
+      <buffersize>1</buffersize>
+      <concurrencylimit>1</concurrencylimit>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <queueallstagesatonce>T</queueallstagesatonce>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>NOTSCHEDULED</status>
+      <title>采购开票平台通知单审批mr</title>
+      <yieldaftermins>60</yieldaftermins>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT15M</repeat>
+          <startdate>2021-02-26</startdate>
+          <starttime>08:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</mapreducescript>

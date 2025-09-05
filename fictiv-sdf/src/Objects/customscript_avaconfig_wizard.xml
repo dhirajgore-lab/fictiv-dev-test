@@ -1,0 +1,31 @@
+<suitelet scriptid="customscript_avaconfig_wizard">
+  <defaultfunction>AVA_SetupAssistant</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_Config_Wizard</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ConfigFunctions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ava_configurewizard">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>ADMINISTRATOR</audslctrole>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>AVA_AvaTaxWizard</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+  </libraries>
+</suitelet>

@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_vnd_purch_history">
+  <contact>F</contact>
+  <customer>F</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>Purchase History</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_vnd_po_hist_sblist]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_purchase_history]</tab>
+  <vendor>T</vendor>
+</sublist>

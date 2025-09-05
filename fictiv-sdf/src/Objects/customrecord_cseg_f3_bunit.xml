@@ -1,0 +1,45 @@
+<customrecordtype scriptid="customrecord_cseg_f3_bunit">
+  <allowattachments>F</allowattachments>
+  <allowinlinedeleting>F</allowinlinedeleting>
+  <allowinlinedetaching>F</allowinlinedetaching>
+  <allowinlineediting>F</allowinlineediting>
+  <allowquickadd>F</allowquickadd>
+  <allowquicksearch>F</allowquicksearch>
+  <customsegment>[type=customsegment, scriptid=cseg_f3_bunit]</customsegment>
+  <enabledle>F</enabledle>
+  <enablekeywords>F</enablekeywords>
+  <enablemailmerge>F</enablemailmerge>
+  <enableoptimisticlocking>F</enableoptimisticlocking>
+  <enablesystemnotes>T</enablesystemnotes>
+  <icon></icon>
+  <iconbuiltin>T</iconbuiltin>
+  <iconindex></iconindex>
+  <includeinsearchmenu>F</includeinsearchmenu>
+  <showcreationdate>F</showcreationdate>
+  <showcreationdateonlist>F</showcreationdateonlist>
+  <showlastmodified>F</showlastmodified>
+  <showlastmodifiedonlist>F</showlastmodifiedonlist>
+  <shownotes>T</shownotes>
+  <showowner>F</showowner>
+  <showownerallowchange>F</showownerallowchange>
+  <showowneronlist>F</showowneronlist>
+  <instances>
+    <instance scriptid="val_6834_4541795_542">
+      <isinactive>F</isinactive>
+      <name>Enterprise</name>
+      <parent></parent>
+    </instance>
+    <instance scriptid="val_6835_4541795_260">
+      <isinactive>F</isinactive>
+      <name>SMB</name>
+      <parent></parent>
+    </instance>
+  </instances>
+  <links>
+    <link>
+      <linkcategory>BASICSETUPCOMPANY</linkcategory>
+      <linklabel></linklabel>
+      <linktasktype>LIST</linktasktype>
+    </link>
+  </links>
+</customrecordtype>

@@ -1,0 +1,23 @@
+<bundleinstallationscript scriptid="customscript_cps_bdc_prefs_migrator_bi">
+  <afterinstallfunction></afterinstallfunction>
+  <afterupdatefunction>afterUpdate</afterupdatefunction>
+  <beforeinstallfunction></beforeinstallfunction>
+  <beforeuninstallfunction>beforeUnInstall</beforeuninstallfunction>
+  <beforeupdatefunction></beforeupdatefunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Bill.com Preferences Updater</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails>NSExceptions@hq.bill.com</notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 251353/BdcPreferencesMigrator.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_cps_bdc_prefs_migrator_bi">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <runasrole>ADMINISTRATOR</runasrole>
+      <status>RELEASED</status>
+      <title>Bill.com Preferences Updater</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</bundleinstallationscript>

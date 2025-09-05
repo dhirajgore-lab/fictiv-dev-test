@@ -1,0 +1,31 @@
+<centercategory scriptid="custcentercategory_arena_integration">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_arena_integration_tab]</centertab>
+  <label>On Demand Integration</label>
+  <links>
+    <link>
+      <linklabel>Fetch by Item Numbers</linklabel>
+      <linkobject>[scriptid=customscript_arena_integration_sui.customdeploy_arena_integ_item_sui_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Fetch by Change Number</linklabel>
+      <linkobject>[scriptid=customscript_arena_integration_sui.customdeploy_arena_integ_ch_no_sui_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Fetch by Effective Date Range</linklabel>
+      <linkobject>[scriptid=customscript_arena_integration_sui.customdeploy_arena_integ_date_sui_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Fetch by New Releases</linklabel>
+      <linkobject>[scriptid=customscript_arena_integration_sui.customdeploy_arena_integ_new_sui_dp]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

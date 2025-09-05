@@ -1,0 +1,36 @@
+<othercustomfield scriptid="custrecord_cps_bdc_lastupdatedbyimp_dep">
+  <accesslevel>2</accesslevel>
+  <applyformatting>F</applyformatting>
+  <checkspelling>F</checkspelling>
+  <defaultchecked>F</defaultchecked>
+  <defaultselection></defaultselection>
+  <defaultvalue></defaultvalue>
+  <description></description>
+  <displayheight></displayheight>
+  <displaytype>LOCKED</displaytype>
+  <displaywidth></displaywidth>
+  <dynamicdefault></dynamicdefault>
+  <enabletextenhance>F</enabletextenhance>
+  <encryptatrest>F</encryptatrest>
+  <fieldtype>CHECKBOX</fieldtype>
+  <help></help>
+  <isformula>F</isformula>
+  <ismandatory>F</ismandatory>
+  <label>Bill.com Last Updated By Import</label>
+  <linktext></linktext>
+  <maxlength></maxlength>
+  <maxvalue></maxvalue>
+  <minvalue></minvalue>
+  <onparentdelete></onparentdelete>
+  <rectype>-102</rectype>
+  <searchcomparefield></searchcomparefield>
+  <searchdefault></searchdefault>
+  <searchlevel>2</searchlevel>
+  <selectrecordtype></selectrecordtype>
+  <showhierarchy>F</showhierarchy>
+  <showinlist>F</showinlist>
+  <sourcefilterby></sourcefilterby>
+  <sourcefrom></sourcefrom>
+  <sourcelist></sourcelist>
+  <storevalue>T</storevalue>
+</othercustomfield>

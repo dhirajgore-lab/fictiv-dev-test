@@ -1,0 +1,12 @@
+<emailtemplate scriptid="custemailtmpl_13_4541795_678">
+  <addcompanyaddress>T</addcompanyaddress>
+  <addunsubscribelink>T</addunsubscribelink>
+  <description></description>
+  <isinactive>F</isinactive>
+  <isprivate>F</isprivate>
+  <mediaitem></mediaitem>
+  <name>EMAIL PDF-PT</name>
+  <recordtype>TRANSACTION</recordtype>
+  <subject>${companyInformation.companyName}: ${transaction@title} #${transaction.tranId}</subject>
+  <usesmedia>F</usesmedia>
+</emailtemplate>

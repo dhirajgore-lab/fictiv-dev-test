@@ -1,0 +1,54 @@
+<translationcollection scriptid="custcollectiontranslations_dataset_1_351b01173b0b46ff9a38ef">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_1_351b01173b0b46ff9a38ef.dataset_name_6_3]</name>
+  <strings>
+    <string scriptid="dataset_field_6_1">
+      <defaulttranslation>Exchange Rate 汇率</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_2">
+      <defaulttranslation>Odoo Line Total(USD) Odoo 行金额</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_name_6_3">
+      <defaulttranslation>BILL Report PO</defaulttranslation>
+      <description>Name in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_4">
+      <defaulttranslation>Product 产品</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_5">
+      <defaulttranslation>Qty 数量</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_6">
+      <defaulttranslation>Unit Price RMB单价</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_7">
+      <defaulttranslation>Memo 中文名称</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_8">
+      <defaulttranslation>Odoo Unit Price(USD) Odoo USD单价</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_9">
+      <defaulttranslation>Unit 个</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_10">
+      <defaulttranslation>PO# 采购订单</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_11">
+      <defaulttranslation>PO Date 订单日期</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+    <string scriptid="dataset_field_6_12">
+      <defaulttranslation>供应商Vendor 供应商名称</defaulttranslation>
+      <description>Field in dataset</description>
+    </string>
+  </strings>
+</translationcollection>

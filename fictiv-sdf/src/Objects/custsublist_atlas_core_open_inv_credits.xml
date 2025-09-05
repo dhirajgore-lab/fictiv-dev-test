@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_open_inv_credits">
+  <contact>F</contact>
+  <customer>T</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>Open Invoices &amp; Credits</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_cus_open_inv_cn]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_customer360]</tab>
+  <vendor>F</vendor>
+</sublist>

@@ -1,0 +1,12 @@
+<emailtemplate scriptid="custemailtmpl_19_4541795_801">
+  <addcompanyaddress>T</addcompanyaddress>
+  <addunsubscribelink>T</addunsubscribelink>
+  <description></description>
+  <isinactive>F</isinactive>
+  <isprivate>F</isprivate>
+  <mediaitem></mediaitem>
+  <name>30 Days Overdue</name>
+  <recordtype>CUSTOM</recordtype>
+  <subject>Outstanding Payments ${customer.companyName}</subject>
+  <usesmedia>F</usesmedia>
+</emailtemplate>

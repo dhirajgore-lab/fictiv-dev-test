@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory5_3">
+  <center>[scriptid=custcenter1_2]</center>
+  <centertab>[scriptid=custcentertab7_2]</centertab>
+  <label>Invoice</label>
+  <links>
+    <link>
+      <linkid>LIST_TRAN_CUSTINVC</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

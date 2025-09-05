@@ -1,0 +1,26 @@
+<scheduledscript scriptid="customscript_avadeletelogs_sched">
+  <defaultfunction>AVA_DeleteTransactionLogs</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_TransactionLogTransform_Sched</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_deletelogs_deploy1">
+      <isdeployed>F</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_DeleteLogs</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT2H</repeat>
+          <startdate>2008-11-27</startdate>
+          <starttime>08:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

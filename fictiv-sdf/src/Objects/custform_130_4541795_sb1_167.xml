@@ -1,0 +1,38 @@
+<transactionForm scriptid="custform_130_4541795_sb1_167" standard="STANDARDPACKINGSLIP">
+  <name>Fictiv|Packing Slip</name>
+  <recordType>INVOICE</recordType>
+  <inactive>F</inactive>
+  <preferred>T</preferred>
+  <mainFields>
+    <defaultFieldGroup/>
+  </mainFields>
+  <tabs>
+    <tab>
+      <id>TRANSACTIONSHIPPING</id>
+      <label>Shipping</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+    <tab>
+      <id>TRANSACTIONPAYMENT</id>
+      <label>Payment</label>
+      <visible>T</visible>
+      <fieldGroups>
+        <defaultFieldGroup/>
+      </fieldGroups>
+      <subItems/>
+    </tab>
+  </tabs>
+  <disclaimer/>
+  <address/>
+  <emailMessageTemplate>USE_DEFAULT</emailMessageTemplate>
+  <printingType>
+    <advanced>
+      <printTemplate>[scriptid=custtmpl_413_4541795_sb1_784]</printTemplate>
+      <emailTemplate>[scriptid=custtmpl_413_4541795_sb1_784]</emailTemplate>
+    </advanced>
+  </printingType>
+</transactionForm>

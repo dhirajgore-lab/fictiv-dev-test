@@ -1,0 +1,12 @@
+<centercategory scriptid="custcentercategory4_2">
+  <center>[scriptid=custcenter1_2]</center>
+  <centertab>[scriptid=custcentertab7_2]</centertab>
+  <label translate="T">[scriptid=custcollection_dl_translations.cent_cat_4_customer_label]</label>
+  <links>
+    <link>
+      <linkid>LIST_CUSTJOB</linkid>
+      <linklabel></linklabel>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

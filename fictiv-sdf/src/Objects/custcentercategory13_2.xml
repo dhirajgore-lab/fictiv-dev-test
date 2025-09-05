@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory13_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>Tax Recalculation</label>
+  <links>
+    <link>
+      <linklabel>Create Recalculation Batch</linklabel>
+      <linkobject>[scriptid=customscript_ava_recalcutility.customdeploy_recalcform]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>View Recalculation Batches</linklabel>
+      <linkobject>[scriptid=customscript_ava_recalcbatches.customdeploy_ava_recalcbatches]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

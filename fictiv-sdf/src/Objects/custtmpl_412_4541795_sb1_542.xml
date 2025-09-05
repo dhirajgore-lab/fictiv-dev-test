@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_412_4541795_sb1_542" standard="STDTMPLCUSTINVC">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Fictiv Invoice Template</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

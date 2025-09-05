@@ -1,0 +1,19 @@
+<customlist scriptid="customlist_st_mfg_process_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Manufacturing Process List</name>
+  <customvalues>
+    <customvalue scriptid="val_2021610_4541795_277">
+      <abbreviation>I</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Injection Molding</value>
+    </customvalue>
+    <customvalue scriptid="val_2021611_4541795_916">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>CNC Machining</value>
+    </customvalue>
+  </customvalues>
+</customlist>

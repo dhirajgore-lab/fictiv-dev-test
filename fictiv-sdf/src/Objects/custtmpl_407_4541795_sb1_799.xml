@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_407_4541795_sb1_799" standard="STDTMPLPURCHORD">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>F</preferred>
+  <printtype>TRANSACTION</printtype>
+  <title>Fictiv India Purchase Order</title>
+  <trantype>PURCHORD</trantype>
+</advancedpdftemplate>

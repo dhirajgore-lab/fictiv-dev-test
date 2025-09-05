@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_cps_bdc_sync_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Bill.com Sync Status</name>
+  <customvalues>
+    <customvalue scriptid="value_1_t960404_417">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Successfully synced</value>
+    </customvalue>
+    <customvalue scriptid="value_2_t960404_417">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Sync Error</value>
+    </customvalue>
+    <customvalue scriptid="value_3_t960404_417">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Not synced</value>
+    </customvalue>
+    <customvalue scriptid="value_4_t960404_417">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Paid outside Bill.com</value>
+    </customvalue>
+  </customvalues>
+</customlist>

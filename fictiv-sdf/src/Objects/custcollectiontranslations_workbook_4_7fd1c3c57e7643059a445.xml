@@ -1,0 +1,10 @@
+<translationcollection scriptid="custcollectiontranslations_workbook_4_7fd1c3c57e7643059a445">
+  <defaultlanguage>en-US</defaultlanguage>
+  <name translate="T">[scriptid=custcollectiontranslations_workbook_4_7fd1c3c57e7643059a445.workbook_name_24_1]</name>
+  <strings>
+    <string scriptid="workbook_name_24_1">
+      <defaulttranslation>ACS|CustomerDepositDetail</defaulttranslation>
+      <description>Name in workbook</description>
+    </string>
+  </strings>
+</translationcollection>

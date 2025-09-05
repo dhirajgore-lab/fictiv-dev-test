@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory5_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>Setup</label>
+  <links>
+    <link>
+      <linklabel>Configure Avalara</linklabel>
+      <linkobject>[scriptid=customscript_avaconfig_wizard.customdeploy_ava_configurewizard]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Entity/Use Code</linklabel>
+      <linkobject>[scriptid=customscript_avaentityuselist_suitlet.customdeploy_entityuselist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Shipping Codes</linklabel>
+      <linkobject>[scriptid=customscript_avashippinglist_suitlet.customdeploy_shippingcodelist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

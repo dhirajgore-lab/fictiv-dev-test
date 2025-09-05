@@ -1,0 +1,52 @@
+<centertab scriptid="custcentertab_pbcs">
+  <allcustomers>T</allcustomers>
+  <allemployees>T</allemployees>
+  <allpartners>T</allpartners>
+  <allroles>T</allroles>
+  <allvendors>T</allvendors>
+  <audslctrole></audslctrole>
+  <center>ALL</center>
+  <label translate="T">[scriptid=custcollection_nspb_translation.mnu_planning_and_budgeting]</label>
+  <portlets>
+    <portlet scriptid="_nspbcs_tab_custom_portlet">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_job_quick_exec">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_sync_checklist">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_job_qexec_log_1">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_job_qexec_log_2">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_job_qexec_log_3">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_substitution_vars">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="customscript_nspbcs_pl_account_balance">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

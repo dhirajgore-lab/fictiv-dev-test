@@ -1,0 +1,23 @@
+<bundleinstallationscript scriptid="customscript_esc_bundle_script">
+  <afterinstallfunction></afterinstallfunction>
+  <afterupdatefunction></afterupdatefunction>
+  <beforeinstallfunction>beforeInstallUpdate</beforeinstallfunction>
+  <beforeuninstallfunction></beforeuninstallfunction>
+  <beforeupdatefunction>beforeInstallUpdate</beforeupdatefunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Enhanced Sales Center Bundle Script</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 58416/src/bundle_script.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_esc_bundle_script">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>Enhanced Sales Center Bundle Script</title>
+    </scriptdeployment>
+  </scriptdeployments>
+</bundleinstallationscript>

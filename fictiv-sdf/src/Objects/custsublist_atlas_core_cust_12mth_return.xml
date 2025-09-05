@@ -1,0 +1,13 @@
+<sublist scriptid="custsublist_atlas_core_cust_12mth_return">
+  <contact>F</contact>
+  <customer>T</customer>
+  <employee>F</employee>
+  <field></field>
+  <job>F</job>
+  <label>12 Month Returns</label>
+  <partner>F</partner>
+  <savedsearch>[scriptid=customsearch_atlas_12m_cusreturn_sblist]</savedsearch>
+  <sublisttype>ENTITY</sublisttype>
+  <tab>[scriptid=custtab_atlas_core_customer360]</tab>
+  <vendor>F</vendor>
+</sublist>

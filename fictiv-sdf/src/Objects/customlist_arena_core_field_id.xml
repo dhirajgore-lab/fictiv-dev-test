@@ -1,0 +1,69 @@
+<customlist scriptid="customlist_arena_core_field_id">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>F</isordered>
+  <name>Arena Core Field ID</name>
+  <customvalues>
+    <customvalue scriptid="val_98020_t2228999_223">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>description</value>
+    </customvalue>
+    <customvalue scriptid="val_98173_t2228999_727">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>guid</value>
+    </customvalue>
+    <customvalue scriptid="val_98021_t2228999_803">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>lifecyclePhase</value>
+    </customvalue>
+    <customvalue scriptid="val_98022_t2228999_917">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>name</value>
+    </customvalue>
+    <customvalue scriptid="val_98023_t2228999_592">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>number</value>
+    </customvalue>
+    <customvalue scriptid="val_98024_t2228999_633">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>productionCost</value>
+    </customvalue>
+    <customvalue scriptid="val_98025_t2228999_479">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>prototypeCost</value>
+    </customvalue>
+    <customvalue scriptid="val_98026_t2228999_890">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>revisionNumber</value>
+    </customvalue>
+    <customvalue scriptid="val_98027_t2228999_296">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>standardCost</value>
+    </customvalue>
+    <customvalue scriptid="val_98028_t2228999_554">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>targetCost</value>
+    </customvalue>
+    <customvalue scriptid="val_98029_t2228999_972">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>targetPrice</value>
+    </customvalue>
+    <customvalue scriptid="val_98030_t2228999_676">
+      <abbreviation></abbreviation>
+      <isinactive>F</isinactive>
+      <value>uom</value>
+    </customvalue>
+  </customvalues>
+</customlist>

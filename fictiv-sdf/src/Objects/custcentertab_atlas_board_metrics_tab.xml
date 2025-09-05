@@ -1,0 +1,87 @@
+<centertab scriptid="custcentertab_atlas_board_metrics_tab">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>EXECUTIVE</center>
+  <label>Board Metrics</label>
+  <portlets>
+    <portlet scriptid="portlet_720_4577637_198">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_721_4577637_343">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_722_4577637_307">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_723_4577637_694">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_724_4577637_526">
+      <isportletshown>T</isportletshown>
+      <portlet>SNAPSHOTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_725_4577637_243">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_726_4577637_377">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_727_4577637_360">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_728_4577637_751">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_729_4577637_428">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_730_4577637_215">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_731_4577637_168">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_732_4577637_594">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_750_4577637_431">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_751_4577637_886">
+      <isportletshown>T</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

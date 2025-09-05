@@ -1,0 +1,57 @@
+<centertab scriptid="custcentertab22">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>[scriptid=custcenter1]</center>
+  <label>Support</label>
+  <portlets>
+    <portlet scriptid="portlet_331_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>ACCOUNTCENTER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_314_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>USERGROUP</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_317_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>FOLLOWNETSUITE</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_328_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>QUICKSEARCH</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_334_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SETTINGS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_323_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>NEWFEATURES</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_322_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>SUITEANSWERS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_336_3368792_785">
+      <isportletshown>T</isportletshown>
+      <portlet>TASKLINKS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_320_3368792_785">
+      <isportletshown>F</isportletshown>
+      <portlet>SHORTCUTS</portlet>
+      <portletcolumn>2</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

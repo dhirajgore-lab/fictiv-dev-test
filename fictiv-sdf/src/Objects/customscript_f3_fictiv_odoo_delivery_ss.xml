@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_f3_fictiv_odoo_delivery_ss">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo Delivery Order Int._Step 4</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_fictiv_odoo_delivery_integration_ss.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_fictiv_odoo_delivry_ss_d">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Fictiv Odoo Delivery Order Integration</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2019-10-31</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

@@ -1,0 +1,5 @@
+<subtab scriptid="custtab_34_3956802_208">
+  <parent>[scriptid=custtab_29_3956802_208]</parent>
+  <tabtype>ENTITY</tabtype>
+  <title translate="T">[scriptid=custcollection_dl_translations.procedure_setup_entity_subtab_name]</title>
+</subtab>

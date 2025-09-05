@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory15_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>Exempt Certificates/Status</label>
+  <links>
+    <link>
+      <linklabel>Get Certificates/Status</linklabel>
+      <linkobject>[scriptid=customscript_avacertificates_suitelet.customdeploy_avacertificates_suitelet]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

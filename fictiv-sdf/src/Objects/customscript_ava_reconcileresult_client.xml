@@ -1,0 +1,20 @@
+<clientscript scriptid="customscript_ava_reconcileresult_client">
+  <description></description>
+  <fieldchangedfunction>AVA_FieldChange</fieldchangedfunction>
+  <isinactive>F</isinactive>
+  <lineinitfunction></lineinitfunction>
+  <name>AVA_ReconcileResult_Client</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <pageinitfunction></pageinitfunction>
+  <postsourcingfunction></postsourcingfunction>
+  <recalcfunction></recalcfunction>
+  <saverecordfunction></saverecordfunction>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ReconcileHistory.js]</scriptfile>
+  <validatedeletefunction></validatedeletefunction>
+  <validatefieldfunction></validatefieldfunction>
+  <validateinsertfunction></validateinsertfunction>
+  <validatelinefunction></validatelinefunction>
+</clientscript>

@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_nspbcs_integration">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_pbcs]</centertab>
+  <label translate="T">[scriptid=custcollection_nspb_translation.mnu_access]</label>
+  <links>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_access_link]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_pbcs_link.customdeploy_nspbcs_sl_pbcs_link]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

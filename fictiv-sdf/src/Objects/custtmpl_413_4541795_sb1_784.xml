@@ -1,0 +1,9 @@
+<advancedpdftemplate scriptid="custtmpl_413_4541795_sb1_784" standard="STDTMPLPACKINGSLIP">
+  <description></description>
+  <displaysourcecode>T</displaysourcecode>
+  <isinactive>F</isinactive>
+  <preferred>T</preferred>
+  <printtype>PACKINGSLIP</printtype>
+  <title>Fictiv Packing Slip</title>
+  <trantype>CUSTINVC</trantype>
+</advancedpdftemplate>

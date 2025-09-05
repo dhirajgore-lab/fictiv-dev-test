@@ -1,0 +1,20 @@
+<customtransactiontype scriptid="customsale_st_revised_orders">
+  <cancloseorder>F</cancloseorder>
+  <iscredit>F</iscredit>
+  <isposting>F</isposting>
+  <isvoidable>F</isvoidable>
+  <name>Revised Orders</name>
+  <showstatus>F</showstatus>
+  <transactionstyle>SALES</transactionstyle>
+  <accounting>
+    <filterbyaccounttype>ACCTREC</filterbyaccounttype>
+    <filterbyaccounttypeall>F</filterbyaccounttypeall>
+    <specifyaccountontransaction>T</specifyaccountontransaction>
+  </accounting>
+  <permissions>
+    <permission>
+      <permittedlevel>FULL</permittedlevel>
+      <permittedrole>ADMINISTRATOR</permittedrole>
+    </permission>
+  </permissions>
+</customtransactiontype>

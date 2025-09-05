@@ -1,0 +1,55 @@
+<centercategory scriptid="custcentercategory_nspbcs_pbcs_setup">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab_pbcs]</centertab>
+  <label translate="T">[scriptid=custcollection_nspb_translation.mnu_setup]</label>
+  <links>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_sub_vars]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_substitution_vars.customdeploy_nspbcs_sl_subst_vars_v2]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_ss_settings]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_ss_setting_list.customdeploy_nspbcs_sl_ss_setting_list]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_dataset_settings]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_ds_setting_list.customdeploy_nspbcs_sl_ds_setting_list]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_ss_allowlist]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_ss_prefix_alwlst.customdeploy_nspbcs_sl_ss_prefix_alwlst]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_acct_hierarchy]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_acctmetahier_link.customdeploy_nspbcs_sl_acctmetahier_link]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_file_encrypt_pass]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_setup.customdeploy_nspbcs_sl_setup]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_sync_checklist]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_sync_checklist.customdeploy_nspbcs_sl_sync_checklist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel translate="T">[scriptid=custcollection_nspb_translation.mnu_manage_dataset]</linklabel>
+      <linkobject>[scriptid=customscript_nspbcs_sl_manage_dataset.customdeploy_nspbcs_sl_manage_dataset]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

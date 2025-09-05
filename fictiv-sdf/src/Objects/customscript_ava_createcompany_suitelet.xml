@@ -1,0 +1,61 @@
+<suitelet scriptid="customscript_ava_createcompany_suitelet">
+  <defaultfunction>AVA_CreateCompanyForm</defaultfunction>
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>AVA_CreateCompany_Suitelet</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <notifyuser>F</notifyuser>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ConfigFunctions.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_createcomproleid">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth>40</displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>T</ismandatory>
+      <label>Role ID</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting></setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_ava_createcompany_suitelet">
+      <allemployees>F</allemployees>
+      <allpartners>F</allpartners>
+      <allroles>F</allroles>
+      <audslctrole>ADMINISTRATOR</audslctrole>
+      <custscript_createcomproleid></custscript_createcomproleid>
+      <eventtype></eventtype>
+      <isdeployed>T</isdeployed>
+      <isonline>F</isonline>
+      <loglevel>DEBUG</loglevel>
+      <runasrole></runasrole>
+      <status>RELEASED</status>
+      <title>Create Company</title>
+    </scriptdeployment>
+  </scriptdeployments>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+  </libraries>
+</suitelet>

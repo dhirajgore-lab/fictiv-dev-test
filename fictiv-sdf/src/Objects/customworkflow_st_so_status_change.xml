@@ -1,0 +1,73 @@
+<workflow scriptid="customworkflow_st_so_status_change">
+  <description></description>
+  <initcontexts>ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW</initcontexts>
+  <initeventtypes></initeventtypes>
+  <initlocalizationcontext></initlocalizationcontext>
+  <initoncreate>T</initoncreate>
+  <initonvieworupdate>F</initonvieworupdate>
+  <initsavedsearchcondition></initsavedsearchcondition>
+  <inittriggertype></inittriggertype>
+  <isinactive>F</isinactive>
+  <islogenabled>F</islogenabled>
+  <keephistory>ONLYWHENTESTING</keephistory>
+  <name>Sales Order &amp; Invoice Status Change</name>
+  <recordtypes>INVOICE|SALESORDER</recordtypes>
+  <releasestatus>RELEASED</releasestatus>
+  <runasadmin>T</runasadmin>
+  <initcondition>
+    <formula><![CDATA["Custom Form" IN ("Transaction Form1","Transaction Form2")]]></formula>
+    <type>VISUAL_BUILDER</type>
+    <parameters>
+      <parameter>
+        <name>Custom Form</name>
+        <value>STDBODYCUSTOMFORM</value>
+      </parameter>
+      <parameter>
+        <name>Transaction Form1</name>
+        <selectrecordtype>-171</selectrecordtype>
+        <value>[scriptid=custform_st_fictiv_production_sales_order_]</value>
+      </parameter>
+      <parameter>
+        <name>Transaction Form2</name>
+        <selectrecordtype>-171</selectrecordtype>
+        <value>[scriptid=custform_st_fictiv_production_invoice]</value>
+      </parameter>
+    </parameters>
+  </initcondition>
+  <workflowstates>
+    <workflowstate scriptid="workflowstate55">
+      <description></description>
+      <donotexitworkflow>F</donotexitworkflow>
+      <name>State 1</name>
+      <positionx>243</positionx>
+      <positiony>133</positiony>
+      <workflowactions triggertype="ONENTRY">
+        <setfieldvalueaction scriptid="workflowaction135">
+          <clienttriggerfields></clienttriggerfields>
+          <conditionsavedsearch></conditionsavedsearch>
+          <contexttypes>ACTION|BANKCONNECTIVITY|BANKSTATEMENTPARSER|BUNDLEINSTALLATION|CLIENT|CSVIMPORT|CUSTOMGLLINES|CUSTOMMASSUPDATE|RECORDACTION|DATASETBUILDER|DEBUGGER|EMAILCAPTURE|FICONNECTIVITY|FIPARSER|MAPREDUCE|OCRPLUGIN|OFFLINECLIENT|OTHER|PAYMENTPOSTBACK|PAYMENTGATEWAY|PLATFORMEXTENSION|PORTLET|PROMOTIONS|CONSOLRATEADJUSTOR|RESTWEBSERVICES|RESTLET|ADVANCEDREVREC|SCHEDULED|SDFINSTALLATION|SHIPPINGPARTNERS|WEBSERVICES|SUITELET|TAXCALCULATION|USEREVENT|USERINTERFACE|WORKBOOKBUILDER|WORKFLOW</contexttypes>
+          <eventtypes></eventtypes>
+          <field>STDBODYORDERSTATUS</field>
+          <isinactive>F</isinactive>
+          <scheduledelay></scheduledelay>
+          <schedulemode>DELAY</schedulemode>
+          <schedulerecurrence></schedulerecurrence>
+          <scheduletimeofday></scheduletimeofday>
+          <scheduletimeunit></scheduletimeunit>
+          <valuechecked>F</valuechecked>
+          <valuedate></valuedate>
+          <valuefield></valuefield>
+          <valueformula></valueformula>
+          <valuejoinfield></valuejoinfield>
+          <valueselect>11</valueselect>
+          <valuetext></valuetext>
+          <valuetype>STATIC</valuetype>
+          <initcondition>
+            <formula></formula>
+            <type>VISUAL_BUILDER</type>
+          </initcondition>
+        </setfieldvalueaction>
+      </workflowactions>
+    </workflowstate>
+  </workflowstates>
+</workflow>

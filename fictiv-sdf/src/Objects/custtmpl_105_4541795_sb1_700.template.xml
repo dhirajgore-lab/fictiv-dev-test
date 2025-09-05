@@ -1,0 +1,303 @@
+<?xml version="1.0"?><!DOCTYPE pdf PUBLIC "-//big.faceless.org//report" "report-1.1.dtd">
+<pdf>
+<head padding="0.2in 0.2in 0.2in 0.2in">
+<#if .locale == "ru_RU">
+    <link name="verdana" type="font" subtype="opentype" src="${nsfont.verdana}" src-bold="${nsfont.verdana_bold}" bytes="2" />
+</#if>
+    <macrolist>
+        <macro id="nlheader">
+            <table class="header" style="width: 100%; margin-right : 24px; margin-top: 0px" ><tr>
+	<td rowspan="2" style="margin-left: 23px; margin-top:12px; height: 50px;"><#if companyInformation.logoUrl?length != 0><img height="68" src="${companyInformation.logoUrl}" style="float: left;" width="7.3cm" /> </#if></td>
+	<td style= "margin-top: 18px; margin-right: 5px" align="right"><span font-size="25pt">${record@title}</span></td>
+	</tr>
+	<tr >
+        <td align="right">    <table style="height:10px; width: 50%; margin-top: -2.5px ;margin-right: 6 px"><tr style= "line-height : 16.5px;" >
+	<th colspan="18" style="font-size: 11.5pt; border: 1px solid black;padding:3px 2px 2px 5px;"> ${record.trandate@label}</th>
+	<th colspan="20" style="font-size: 12pt;border-right: 1px solid black;border-bottom: 1px solid black;padding: 3px 2px 2px 4px; ">${record.tranid@label}</th>
+	</tr>
+	<tr style= "line-height : 16.5px;">
+	<td colspan="18"  style="font-family: serif;font-size: 11pt;text-align: center; padding-left: 5px;border-left: 1px solid black;border-bottom: 1px solid black;vertical-align: middle">${record.trandate}</td>
+	<td colspan="20" style="font-family: serif;font-size: 11pt; padding-left: 5px;border-left: 1px solid black; border-right: 1px solid black;border-bottom: 1px solid black;vertical-align :middle">${record.tranid}</td>
+	</tr></table></td>
+    </tr>
+	<tr>
+		<td style="margin-top:-4px; height: 10px;margin-left: 29px;vertical-align: top;">
+      		<span style="line-height: 14px; font-size: 12pt;font-weight: bold; background-color: rgb(255, 255, 255);"> 
+      			Fictiv Technology Solutions, Private Limited
+                <br />&nbsp;Pride House Office
+                <br />&nbsp;No. 402, 4th Floor
+                <br />&nbsp;Ganeshkhind Road
+                <br />&nbsp;Pune, India 411016
+          </span>
+    	</td>
+	
+	</tr></table>
+        </macro>
+        <macro id="nlfooter">
+          
+        </macro>
+    </macrolist>
+    <style type="text/css">
+
+      table {
+        <#if .locale == "zh_CN">
+            font-family: stsong, sans-serif;
+        <#elseif .locale == "zh_TW">
+            font-family: msung, sans-serif;
+        <#elseif .locale == "ja_JP">
+            font-family: heiseimin, sans-serif;
+        <#elseif .locale == "ko_KR">
+            font-family: hygothic, sans-serif;
+        <#elseif .locale == "ru_RU">
+            font-family: verdana;
+        <#else>
+             font-family: Arial, Helvetica, sans-serif;
+        </#if>
+            font-size: 9pt;
+        font-family: Arial, Helvetica, sans-serif;
+            table-layout: fixed;
+          border-collapse: collapse;
+
+        }
+        th {
+            font-size: 10pt;
+            vertical-align: middle;
+            background-color: #000000;
+            color: #FFFFFF;
+            border-collapse: collapse;
+page-break-inside: avoid;
+
+        }
+      
+        td {
+          color: #000000;
+        }
+      *{
+                     font-family: Arial, Helvetica, sans-serif;
+        font-smooth: auto;
+
+      }
+                .serif{
+            font-family: "Times New Roman", Times, serif;
+          }
+
+</style>
+</head>
+<body header="nlheader" header-height="20.5%" footer="nlfooter" footer-height="20pt" padding="0.2in 0.2in 0.2in 0.2in" size="Letter">
+  <#assign discArr = []>
+    <#assign prevItem ='9999999'>
+      <#assign disc = 0>
+  <table style="  margin-bottom: 0px;
+ padding : 0;margin-left: 24px;margin-right : 25px;  width: 100%;">
+<tr style="margin-bottom: -10px"><td><table  style= " padding : 0;width: 100%; border: 1.3px solid black;"><tr><th colspan="1" style="font-size: 11pt;  padding:2px; padding-left:4px;">${record.billaddress@label}</th>
+</tr><tr ><td colspan="1" style="height: 95px;font-size: 10pt;">
+  ${record.billaddress}
+     </td>
+    </tr>
+  </table>
+</td>
+<td style=" padding-left:8px">
+  <table style = "width: 100%;  border-left: 1.3px solid black; border-right: 1.3px solid black; border-top: 1.3px solid black;">
+    <tr>
+      <th colspan="1" style="font-size: 11pt ;padding: 2px ;padding-left:4px;">${record.shipaddress@label}</th>
+    </tr>
+    <tr>
+      <td colspan="1" style="height:  95px;font-size: 10pt; ">
+ ${record.shipaddress}
+        </td>
+    </tr>
+  </table>
+</td></tr>
+</table>
+<table style="padding : 0;margin-left: 26px;margin-right : 27px; width: 100%; border: 1.3px solid black;"> <tr>
+	<th colspan= "3" style ="padding:2px;font-size: 11.25pt;padding-left: 4px ">${record.terms@label}</th>
+	<th colspan= "2" style ="font-size: 11.25pt ;padding:2px;padding-left: 4px;">${record.duedate@label}</th>
+	<th colspan= "6" style ="font-size: 11.25pt ;padding:2px;padding-left: 4px">${record.otherrefnum@label}</th>
+	<th colspan= "4" style ="font-size: 11.25pt ;padding:2px;padding-left: 4px" >Sales Order</th>
+	</tr>
+	<tr style= "line-height:20px">
+	<td colspan= "3"  style="font-size: 10pt;border-right: 1.3px solid black;padding-top: 2px;padding-left: 4px  ">${record.terms}</td>
+	<td colspan= "2" align="center" style= "font-size: 10pt;border-right: 1.3px solid #000;padding-top: 2px; ">${record.duedate}</td>
+	<td  colspan= "6" style="font-size: 10pt;border-right: 1.3px solid #000;padding-top: 2px;padding-left: 4px ">${record.otherrefnum}</td>
+	<td colspan= "4" style="font-size: 10pt;padding-top: 2px;padding-left: 4px ">${record.custbody_f3_odoo_name}</td>
+	</tr>
+  </table>
+
+<#if record.item?has_content>
+
+<table  cellspacing="0" style=" border-spacing:0; margin-left: 26px;margin-right : 27px; border 1.3px solid #000; width: 100%; border: 1.3px solid black;margin-top: 5px;"><!-- start items -->
+  <#assign total= 0>
+  <#list record.item as item><#if item_index==0>
+ do nothing
+    <#else>
+	<#if item.itemtype =='Discount'>
+      <#assign discArr = discArr + [{item.discline: item.amount}]>
+      </#if>
+    </#if>
+
+    	</#list>
+    <!-- end items -->
+
+    <#list record.item as item><#if item_index==0>
+<thead>
+	<tr style= "margin:left:12px !important; line-height:7px">
+	<th height="5" align="left" colspan="5" style="font-size: 9pt;padding: 5px 6px;padding-left: 5px;">  ${item.item@label}</th>
+	<th align="left" colspan="12" style="font-size: 9pt;padding: 5px 6px;padding-left: 5px;">${item.description@label}</th>
+	<th align="left" colspan="4" style="font-size: 9pt;padding: 5px 6px;">${item.quantity@label}</th>
+    <!--th colspan="2" style="padding: 10px 6px;">${item.options@label}</th-->
+	<th align="left" colspan="4" style="font-size: 9pt;padding: 2px 6px;">Unit Price</th>
+	<th align="left" colspan="4" style="font-size: 9pt;padding: 2px 6px;">Subtotal</th>
+      <th align="left" colspan="3" style="font-size: 9pt;padding: 2px 6px;">${item.taxrate1@label}</th>
+	</tr>
+</thead>
+</#if>
+  <#if item.olditemid != '15496'>
+                      <#if item.itemtype == 'Discount'>
+                  <#assign disc = disc + item.amount>
+                  </#if>
+    <#if item.itemtype != 'Discount'>
+  <tr style= "margin:left:12px !important;line-height:7px">
+  	  <#assign opt = item.options><#assign optindex = opt?index_of(":")>
+        <#if optindex != -1><#assign optresult = " - " + opt?substring(optindex + 2)><#else><#assign optresult = ""></#if>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 1px; font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="5"> ${item.item}</td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 1px;font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="12">${item.description}</td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 1px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4">${item.quantity}</td>
+
+	<#if item?has_next>
+        <#if record.item[item_index+1].itemtype == "Discount">
+     		<#assign total = item.amount + record.item[item_index+1].amount>
+       		<#if item.quantity == 0>
+            	<#assign unitprice = item.rate>
+          	<#else>
+            	<#assign unitprice = total / item.quantity>
+          	</#if>
+       	<#else>
+         	<#assign total = item.amount >
+           	<#if item.quantity == 0>
+            	<#assign unitprice = item.rate>
+          	<#else>
+            	<#assign unitprice = total / item.quantity>
+          	</#if>
+      	</#if>
+    <#else>
+          <#assign total = item.amount >
+          <#if item.quantity == 0>
+           	<#assign unitprice = item.rate>
+          <#else>
+           	<#assign unitprice = total / item.quantity>
+          </#if>
+    </#if>
+      
+         
+    <td    style="padding-left: 4px;padding-right: 4px;padding-bottom: -3px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4">${unitprice?string.currency}</td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: -3px;font-size: 8pt; border-right: 1.3px solid #000;" align="right"  colspan="4">${total?string.currency}</td>
+     
+          <td style= "padding-left: 4px;padding-right: 4px;padding-bottom: -3px;font-size: 8pt;" align="right" colspan="3">${item.taxrate1}</td>
+	</tr>
+          </#if>
+          </#if>
+        </#list><!-- end items -->
+
+        <tr>
+          
+          	<td style=" padding-left: 4px;padding-right: 4px;padding-bottom: 3px; font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="5"></td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 3px;font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="12"></td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 3px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4"></td>
+	
+    <td    style="padding-left: 4px;padding-right: 4px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4"></td>
+	<td style="padding-left: 4px;padding-right: 4px;font-size: 8pt; border-right: 1.3px solid #000;" align="right"  colspan="4"></td>
+          <td style= "padding-left: 4px;padding-right: 4px;font-size: 8pt;" align="right" colspan="3"></td>
+        </tr>
+                <tr>
+          
+          	<td style=" padding-left: 4px;padding-right: 4px;padding-bottom: 3px; font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="5"></td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 3px;font-size: 8pt; border-right: 1.3px solid #000;" align="left" colspan="12"></td>
+	<td style="padding-left: 4px;padding-right: 4px;padding-bottom: 3px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4"></td>
+	
+    <td    style="padding-left: 4px;padding-right: 4px;font-size: 8pt; border-right: 1.3px solid #000;" align="right" colspan="4"></td>
+	<td style="padding-left: 4px;padding-right: 4px;font-size: 8pt; border-right: 1.3px solid #000;" align="right"  colspan="4"></td>
+          <td style= "padding-left: 4px;padding-right: 4px;font-size: 8pt;" align="right" colspan="3"></td>
+        </tr>
+
+        </table>
+
+</#if>
+
+<table  align="right" style="border-left: 1.3px solid black;border-right: 1.3px solid black;border-bottom: 1.3px solid black; width:60%; margin-top: 0px;margin-right : 27px;">
+
+  	<tr style=" line-height: 3px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333; width: 65%"></td>
+	<td colspan= "1" align="right" style="width: 35%"></td>
+	</tr>
+  	<tr style=" line-height: 8px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333;"></td>
+	<td colspan= "1" align="right"></td>
+	</tr>
+    	<tr style=" line-height: 8px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333;"></td>
+	<td colspan= "1" align="right"></td>
+	</tr>
+  	<tr style=" line-height: 8px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333;"></td>
+	<td colspan= "1" align="right"></td>
+  </tr>
+
+
+  <tr style=" line-height: 12px;">
+	<td colspan= "3" align="left" style= "font-size: 12pt;border-right: 1.3px solid #000;padding-left:4px" >${record.subtotal@label}</td>
+	<td colspan= "1"  align="right" style= "font-size: 12pt;padding-left:2px" >${record.subtotal}</td>
+	</tr>
+    
+  	<tr style=" line-height: 12px;">
+	<td colspan= "3"  align="left" style= "font-size: 12pt;border-right: 1.3px solid #000;padding-left:4px" >${record.shippingcost@label} (Fictiv Shipping)</td>
+	<td colspan= "1"  align="right" style= "font-size: 12pt;padding-left:2px" >${record.shippingcost}</td>
+	</tr>
+	
+  	<tr style=" line-height: 12px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;padding-left:4px">${record.taxtotal@label}</td>
+	<td colspan= "1" align="right" style= "font-size: 12pt;padding-left:2px" >${record.taxtotal}</td>
+	</tr>
+  	
+	<tr style=" line-height: 12px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;padding-left:4px">${record.total@label}</td>
+	<td colspan= "1" align="right" style= "font-size: 12pt;padding-left:2px" >${record.total}</td>
+	</tr>
+  	
+  	<tr style=" line-height: 12px;">
+	<td colspan= "3"  align="left" style="font-size: 12pt; border-right: 1.3px solid #000; padding-left:4px;;">${record.amountpaid@label}</td>
+	<td colspan= "1"  align="right" style= "font-size: 12pt;padding-left:2px" >${record.amountpaid}</td>
+	</tr>
+  
+  	<tr style=" line-height: 12px;">
+	<td colspan= "3"  align="left" style="font-size: 12pt; border-right: 1.3px solid #000; padding-left:4px;;">${record.amountremaining@label}</td>
+	<td colspan= "1"  align="right" style= "font-size: 12pt;padding-left:2px" >${record.amountremaining}</td>
+	</tr>
+  
+   	<tr style=" line-height: 8px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333;"></td>
+	<td colspan= "1" align="right"></td>
+  </tr>
+  
+    	<tr style=" line-height: 5px;">
+	<td colspan= "3"  align="left" style=" font-size: 12pt; border-right: 1.3px solid #000;  color: #333333;"></td>
+	<td colspan= "1" align="right"></td>
+  </tr>
+
+    </table>
+        <table id="payment-notes" style="font-family: Arial, Helvetica, sans-serif;margin-left: 32px;font-size=8pt; margin-top: 50px">
+          <tr>
+            <td>
+              Fictiv Technology Solutions, Private Limited
+              <br />Bank Name: ICICI Bank Limited
+              <br />Account 238805001545
+			  <br />
+              <br />Routing No. ICICINBBCTS
+			  <br />
+              <br />Bank address:  Senapati Bapat Marg, 414
+              <br />Empire House
+              <br />Mumbai India
+            </td>
+          </tr>
+        </table>
+</body>
+</pdf>

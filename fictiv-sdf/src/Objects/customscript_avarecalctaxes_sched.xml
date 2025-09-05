@@ -1,0 +1,26 @@
+<scheduledscript scriptid="customscript_avarecalctaxes_sched">
+  <defaultfunction>AVA_RecalculateTaxes</defaultfunction>
+  <description>Scheduled script for running Tax recalculation for Batches created</description>
+  <isinactive>F</isinactive>
+  <name>AVA_RecalculateTaxes_Sched</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_recalculatetaxes_deploy1">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>AVA_RecalculateTaxes_Scheduled 1</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2012-10-07</startdate>
+          <starttime>07:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

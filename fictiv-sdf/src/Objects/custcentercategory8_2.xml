@@ -1,0 +1,19 @@
+<centercategory scriptid="custcentercategory8_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>Reconciliation</label>
+  <links>
+    <link>
+      <linklabel>Create Batch</linklabel>
+      <linkobject>[scriptid=customscript_avareconcilelist_suitelet.customdeploy_avareconcilelist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>View Results</linklabel>
+      <linkobject>[scriptid=customscript_ava_reconciliation_suitelet.customdeploy_ava_reconcileresult]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

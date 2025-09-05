@@ -1,0 +1,19 @@
+<customlist scriptid="customlist_arena_rev_mapping_datatype">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Arena Datatype</name>
+  <customvalues>
+    <customvalue scriptid="val_99220_t2228999_181">
+      <abbreviation>N</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Number</value>
+    </customvalue>
+    <customvalue scriptid="val_99221_t2228999_896">
+      <abbreviation>T</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Text</value>
+    </customvalue>
+  </customvalues>
+</customlist>

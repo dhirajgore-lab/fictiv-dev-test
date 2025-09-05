@@ -1,0 +1,24 @@
+<customlist scriptid="customlist_nspbcs_subvar_act">
+  <description>NSPB Substitution Variables Auto-Update Action</description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>NSPB Sub Var Action</name>
+  <customvalues>
+    <customvalue scriptid="advance_period_12">
+      <abbreviation>M</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Advance to next period (12)</value>
+    </customvalue>
+    <customvalue scriptid="advance_period_13">
+      <abbreviation>Y</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Advance to next period (13)</value>
+    </customvalue>
+    <customvalue scriptid="advance_year">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Advance to next year</value>
+    </customvalue>
+  </customvalues>
+</customlist>

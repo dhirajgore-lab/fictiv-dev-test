@@ -1,0 +1,223 @@
+<savedcsvimport scriptid="custimport_38_4541795_226">
+  <charencoding>windows-1252</charencoding>
+  <columndelimiter>COMMA</columndelimiter>
+  <customrecord>[scriptid=customrecord_f3_odoo_so]</customrecord>
+  <datahandling>ADD</datahandling>
+  <decimaldelimiter>PERIOD</decimaldelimiter>
+  <entryform>[scriptid=custform_55_4541795_481]</entryform>
+  <ignorereadonly>T</ignorereadonly>
+  <importname>CTH_Odoo Sales Order Manual Mapping</importname>
+  <logsystemnotescustfields>F</logsystemnotescustfields>
+  <multiselectdelimiter>|</multiselectdelimiter>
+  <overwritemissingfields>F</overwritemissingfields>
+  <overwritesublists>F</overwritesublists>
+  <queuenumber>1</queuenumber>
+  <recordtype>CUSTOMRECORD</recordtype>
+  <runserversuitescript>F</runserversuitescript>
+  <usemultithread>F</usemultithread>
+  <validatemandatorycustfields>T</validatemandatorycustfields>
+  <audience>
+    <allemployees>F</allemployees>
+    <allpartners>F</allpartners>
+    <allroles>F</allroles>
+    <globaledit>F</globaledit>
+    <ispublic>T</ispublic>
+    <roles></roles>
+  </audience>
+  <filemappings>
+    <filemapping>
+      <file>CUSTOMRECORD</file>
+    </filemapping>
+  </filemappings>
+  <recordmappings>
+    <recordmapping>
+      <record>CUSTOMRECORD</record>
+      <fieldmappings>
+        <fieldmapping>
+          <field>ALTNAME</field>
+          <columnreference>
+            <column>Name (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_cust_po]</field>
+          <columnreference>
+            <column>Customer Po (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_customer_email]</field>
+          <columnreference>
+            <column>Primary Email (RES_PARTNER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_dateorder]</field>
+          <columnreference>
+            <column>Confirmation Date (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_delivcountry]</field>
+          <columnreference>
+            <column>Name (RES_COUNTRY)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_deliverycity]</field>
+          <columnreference>
+            <column>Delivery City (RES_PARTNER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_deliverystate]</field>
+          <columnreference>
+            <column>Name (RES_COUNTRY_STATE)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_discount_amount]</field>
+          <columnreference>
+            <column>Discount in Dollars</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_fictiv_pmethod]</field>
+          <columnreference>
+            <column>Fictiv Payment Method (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_material]</field>
+          <columnreference>
+            <column>Material Name (FICTIV_MATERIAL)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_note]</field>
+          <columnreference>
+            <column>Note (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_odooid]</field>
+          <columnreference>
+            <column>Name (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_price_tax]</field>
+          <columnreference>
+            <column>Price Tax</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_price_unit]</field>
+          <columnreference>
+            <column>Price Unit</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_process_id]</field>
+          <columnreference>
+            <column>Name (FICTIV_PROCESS_TYPE)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_prod_qty]</field>
+          <columnreference>
+            <column>Product Uom Qty</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_product]</field>
+          <columnreference>
+            <column>Name</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_programid]</field>
+          <columnreference>
+            <column>Program Id (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_shipaddress1]</field>
+          <columnreference>
+            <column>Delivery Street (RES_PARTNER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_shipping_price]</field>
+          <columnreference>
+            <column>Fictiv Shipping Price (SALE_ORDER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>[scriptid=customrecord_f3_odoo_so.custrecord_f3_zip]</field>
+          <columnreference>
+            <column>Delivery Zip (RES_PARTNER)</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>EXTERNALID</field>
+          <columnreference>
+            <column>Id</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+        <fieldmapping>
+          <field>NAME</field>
+          <columnreference>
+            <column>Id</column>
+            <file>CUSTOMRECORD</file>
+            <type>NAME</type>
+          </columnreference>
+        </fieldmapping>
+      </fieldmappings>
+    </recordmapping>
+  </recordmappings>
+</savedcsvimport>

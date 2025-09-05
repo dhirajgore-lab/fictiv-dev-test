@@ -1,0 +1,260 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<dataset scriptid="custdataset5">
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_5_10814fb748264f0cbac746.dataset_name_32_2]</name>
+  <dependencies>
+  </dependencies>
+  <definition><![CDATA[<root>
+<_T_>dataSet</_T_>
+<id type="null"/>
+<scriptId type="null"/>
+<applicationId type="null"/>
+<version type="string">0.1</version>
+<name>
+  <translationScriptId>custcollectiontranslations_dataset_5_10814fb748264f0cbac746.dataset_name_32_2</translationScriptId>
+</name>
+<audience>
+  <AudienceItems type="array"/>
+  <isPublic type="boolean">false</isPublic>
+</audience>
+<ownerId>328590</ownerId>
+<description type="null"/>
+<baseRecord>
+  <id>transaction</id>
+  <label>Transaction</label>
+</baseRecord>
+<columns type="array">
+  <_ITEM_>
+    <columnId>1</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>trandate</id>
+      <label>Date</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>trandate</uniqueId>
+    </field>
+    <alias>trandate</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>2</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>memo</id>
+      <label>Memo</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>memo</uniqueId>
+    </field>
+    <alias>memo</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>3</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>entity</id>
+      <label>Entity</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>entity</uniqueId>
+    </field>
+    <alias>entity</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>4</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>tranid</id>
+      <label>Document Number/ID</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>tranid</uniqueId>
+    </field>
+    <alias>tranid</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>5</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>trandisplayname</id>
+      <label>Transaction</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>trandisplayname</uniqueId>
+    </field>
+    <alias>trandisplayname</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>6</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>type</id>
+      <label>Type</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>type</uniqueId>
+    </field>
+    <alias>type</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>7</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>foreigntotal</id>
+      <label>Total Amount (Transaction Currency)</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>foreigntotal</uniqueId>
+    </field>
+    <alias>foreigntotal</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>8</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>createddate</id>
+      <label>Date Created</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>createddate</uniqueId>
+    </field>
+    <alias>createddate</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>9</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>linesequencenumber</id>
+      <label>Line Number</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.linesequencenumber</uniqueId>
+    </field>
+    <alias>linesequencenumber</alias>
+  </_ITEM_>
+</columns>
+<criteria>
+  <_T_>condition</_T_>
+  <operator>
+    <code>AND</code>
+  </operator>
+  <children type="array">
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>WITHIN</code>
+      </operator>
+      <meta>
+        <subType>date-ranges</subType>
+        <selectorType type="null"/>
+      </meta>
+      <expressions type="array">
+        <_ITEM_>
+          <value>
+            <type>DATE_RANGE</type>
+            <dateId>LRY</dateId>
+            <dateType>START</dateType>
+          </value>
+          <label>last rolling year</label>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+        <_ITEM_>
+          <value>
+            <type>DATE_RANGE</type>
+            <dateId>LRY</dateId>
+            <dateType>END</dateType>
+          </value>
+          <label>last rolling year</label>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+      </expressions>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>createddate</id>
+        <label>Date Created</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array"/>
+        </joinTrail>
+        <uniqueId>createddate</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+  </children>
+  <meta type="null"/>
+  <field type="null"/>
+  <targetFieldContext>
+    <name>DEFAULT</name>
+  </targetFieldContext>
+  <fieldStateName type="null"/>
+</criteria>
+<formulas type="array"/>
+</root>]]></definition>
+</dataset>

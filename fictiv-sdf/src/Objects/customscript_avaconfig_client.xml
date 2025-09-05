@@ -1,0 +1,31 @@
+<clientscript scriptid="customscript_avaconfig_client">
+  <description></description>
+  <fieldchangedfunction>AVA_ConfigWizardChanged</fieldchangedfunction>
+  <isinactive>F</isinactive>
+  <lineinitfunction></lineinitfunction>
+  <name>AVA_Config_Client</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>F</notifyowner>
+  <notifyuser>F</notifyuser>
+  <pageinitfunction></pageinitfunction>
+  <postsourcingfunction></postsourcingfunction>
+  <recalcfunction></recalcfunction>
+  <saverecordfunction>AVA_ConfigWizardSave</saverecordfunction>
+  <scriptfile>[/SuiteBundles/Bundle 296604/AVA_ConfigFunctions.js]</scriptfile>
+  <validatedeletefunction></validatedeletefunction>
+  <validatefieldfunction></validatefieldfunction>
+  <validateinsertfunction></validateinsertfunction>
+  <validatelinefunction></validatelinefunction>
+  <libraries>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Functions.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Encryption.js]</scriptfile>
+    </library>
+    <library>
+      <scriptfile>[/SuiteBundles/Bundle 296604/AVA_Signature.js]</scriptfile>
+    </library>
+  </libraries>
+</clientscript>

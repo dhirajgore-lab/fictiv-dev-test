@@ -1,0 +1,29 @@
+<customlist scriptid="customlist_st_return_reason_list">
+  <description></description>
+  <isinactive>F</isinactive>
+  <ismatrixoption>F</ismatrixoption>
+  <isordered>T</isordered>
+  <name>Return Reason</name>
+  <customvalues>
+    <customvalue scriptid="val_2021635_4541795_850">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Change in customer requirements</value>
+    </customvalue>
+    <customvalue scriptid="val_2021636_4541795_467">
+      <abbreviation>C</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Customer Request</value>
+    </customvalue>
+    <customvalue scriptid="val_2021637_4541795_130">
+      <abbreviation>P</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Product Defects</value>
+    </customvalue>
+    <customvalue scriptid="val_2021638_4541795_923">
+      <abbreviation>S</abbreviation>
+      <isinactive>F</isinactive>
+      <value>Shipping Damage</value>
+    </customvalue>
+  </customvalues>
+</customlist>

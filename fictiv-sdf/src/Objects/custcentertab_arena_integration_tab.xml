@@ -1,0 +1,10 @@
+<centertab scriptid="custcentertab_arena_integration_tab">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>T</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole></audslctrole>
+  <center>ALL</center>
+  <label>Arena</label>
+</centertab>

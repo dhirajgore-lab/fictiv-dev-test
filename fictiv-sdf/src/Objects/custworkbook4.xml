@@ -1,0 +1,243 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<workbook scriptid="custworkbook4">
+  <name translate="T">[scriptid=custcollectiontranslations_workbook_4_7fd1c3c57e7643059a445.workbook_name_24_1]</name>
+  <dependencies>
+    <dependency>[scriptid=custdataset4]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_tableview_8_ff2e90fb353247478f11.tableview_name_24_2]</dependency>
+  </dependencies>
+  <definition><![CDATA[<root>
+<Workbook>
+  <_T_>workbook</_T_>
+  <id type="null"/>
+  <scriptId type="null"/>
+  <applicationId type="null"/>
+  <version>1.1.1</version>
+  <name>
+    <translationScriptId>custcollectiontranslations_workbook_4_7fd1c3c57e7643059a445.workbook_name_24_1</translationScriptId>
+  </name>
+  <audience>
+    <AudienceItems type="array"/>
+    <isPublic type="boolean">false</isPublic>
+  </audience>
+  <ownerId>277201</ownerId>
+  <description type="null"/>
+  <dataViewIDs type="array">
+    <_ITEM_>custview8_17207642114898534693</_ITEM_>
+  </dataViewIDs>
+  <pivotIDs type="array"/>
+  <chartIDs type="array"/>
+</Workbook>
+<pivots type="array"/>
+<charts type="array"/>
+<dataViews type="array">
+  <_ITEM_>
+    <_T_>dataView</_T_>
+    <id type="null"/>
+    <scriptId>custview8_17207642114898534693</scriptId>
+    <applicationId type="null"/>
+    <version>1.2021.2</version>
+    <name>
+      <translationScriptId>custcollectiontranslations_tableview_8_ff2e90fb353247478f11.tableview_name_24_2</translationScriptId>
+    </name>
+    <workbook>custworkbook4</workbook>
+    <datasets type="array">
+      <_ITEM_>custdataset4</_ITEM_>
+    </datasets>
+    <columns type="array">
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>15</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>25</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion>
+          <_T_>filter</_T_>
+          <operator>
+            <code>ANY_OF</code>
+          </operator>
+          <meta>
+            <subType>values</subType>
+            <selectorType>field-values</selectorType>
+          </meta>
+          <expressions type="array">
+            <_ITEM_>
+              <value>
+                <type>KEY</type>
+                <value>CustDep:B</value>
+              </value>
+              <label>Customer Deposit : Deposited</label>
+              <subType type="null"/>
+              <uiData type="array"/>
+            </_ITEM_>
+            <_ITEM_>
+              <value>
+                <type>KEY</type>
+                <value>CustDep:C</value>
+              </value>
+              <label>Customer Deposit : Fully Applied</label>
+              <subType type="null"/>
+              <uiData type="array"/>
+            </_ITEM_>
+            <_ITEM_>
+              <value>
+                <type>KEY</type>
+                <value>CustDep:A</value>
+              </value>
+              <label>Customer Deposit : Not Deposited</label>
+              <subType type="null"/>
+              <uiData type="array"/>
+            </_ITEM_>
+          </expressions>
+          <field>
+            <_T_>fieldReference</_T_>
+            <id>status</id>
+            <label>Status</label>
+            <joinTrail>
+              <baseRecord>
+                <id>transaction</id>
+                <label>Transaction</label>
+              </baseRecord>
+              <joins type="array"/>
+            </joinTrail>
+            <uniqueId>status</uniqueId>
+          </field>
+          <targetFieldContext>
+            <name>IDENTIFIER</name>
+          </targetFieldContext>
+          <fieldStateName>display</fieldStateName>
+          <caseSensitive type="boolean">false</caseSensitive>
+        </criterion>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>232</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>26</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>39</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width type="null"/>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>30</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>153</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>16</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>101</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>45</dataSetColumnId>
+        <targetFieldContext>
+          <name>UNCONSOLIDATED</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>unconsolidated</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>219</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>54</dataSetColumnId>
+        <targetFieldContext>
+          <name>DISPLAY</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>display</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>194</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>49</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>100</width>
+      </_ITEM_>
+      <_ITEM_>
+        <datasetScriptId>custdataset4</datasetScriptId>
+        <dataSetColumnId>48</dataSetColumnId>
+        <targetFieldContext>
+          <name>IDENTIFIER</name>
+        </targetFieldContext>
+        <sorting type="null"/>
+        <criterion type="null"/>
+        <customLabel type="null"/>
+        <fieldStateName>raw</fieldStateName>
+        <conditionalFormat type="array"/>
+        <width>106</width>
+      </_ITEM_>
+    </columns>
+    <order>0</order>
+  </_ITEM_>
+</dataViews>
+<datasetLinks type="array"/>
+</root>]]></definition>
+  <tables>
+    <table scriptid="custview8_17207642114898534693">
+    </table>
+  </tables>
+</workbook>

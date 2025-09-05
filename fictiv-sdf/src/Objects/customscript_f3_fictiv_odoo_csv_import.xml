@@ -1,0 +1,24 @@
+<scheduledscript scriptid="customscript_f3_fictiv_odoo_csv_import">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo CSV Import_Step 1</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_fictiv_odoo_csv_import_ss.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_fictiv_odoo_csv_import_d">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Fictiv Odoo CSV Import (Odoo Integration Step 1)</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2019-10-24</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

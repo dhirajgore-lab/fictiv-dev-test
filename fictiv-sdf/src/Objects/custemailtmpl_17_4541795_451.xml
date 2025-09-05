@@ -1,0 +1,12 @@
+<emailtemplate scriptid="custemailtmpl_17_4541795_451">
+  <addcompanyaddress>T</addcompanyaddress>
+  <addunsubscribelink>T</addunsubscribelink>
+  <description></description>
+  <isinactive>F</isinactive>
+  <isprivate>F</isprivate>
+  <mediaitem></mediaitem>
+  <name>10 Days Overdue</name>
+  <recordtype>CUSTOM</recordtype>
+  <subject>Second Notice – Overdue Payments ${customer.companyName}</subject>
+  <usesmedia>F</usesmedia>
+</emailtemplate>

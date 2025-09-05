@@ -1,0 +1,92 @@
+<centertab scriptid="custcentertab_atlas_center_tab_ap">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>[scriptid=customrole_atlas_ff_em_controller]|[scriptid=customrole_atlas_ff_em_purch_ap]</audslctrole>
+  <center>ACCOUNTCENTER</center>
+  <label>A/P</label>
+  <portlets>
+    <portlet scriptid="portlet_631_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>REMINDERS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_630_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_592_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_606_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_605_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_604_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_572_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_616_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_591_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_659_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_615_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_590_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SNAPSHOTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_668_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_650_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_748_4577637_621">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_1261_4645765_823">
+      <isportletshown>T</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>

@@ -1,0 +1,25 @@
+<scheduledscript scriptid="customscript_f3_odoo_csv_import_status">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Odoo CSV Import Status_Step 2</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_import_csv_task_status_ss.js]</scriptfile>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy_f3_odoo_csv_import_status_d">
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Odoo CSV Import Status</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT2H</repeat>
+          <startdate>2019-10-24</startdate>
+          <starttime>01:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

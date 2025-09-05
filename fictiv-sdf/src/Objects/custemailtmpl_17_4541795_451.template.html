@@ -1,0 +1,35 @@
+<#assign aDateTime=.now><#assign aDate=aDateTime?date>
+<p>${aDate}<br /><#if companyInformation.formlogo?length !=0><img style="float: left; margin: 7px;" src="${companyInformation.formlogo}" width="105px" height="44px" /></#if><br /><br />Dear ${customer.companyName},<br /><#assign amountTotal = 0> <#if invoicelist?has_content> <#list invoicelist as invoice> <#assign amountTotal = invoice.fxamountremaining + amountTotal> </#list> </#if><br /><br />Your account with us just became past due. Our records indicate that you have a total outstanding balance of $${amountTotal} with the following invoices that became overdue on the respective due date below:<br /><br /><#if invoicelist?has_content></p>
+<table style="font-family: sans-serif; font-size: 12px; width: 807px;" border="1">
+<tbody>
+<tr>
+<th>Invoice #</th>
+<th>Description</th>
+<th style="width: 97px;">Invoice Date</th>
+<th style="width: 102px;">Due Date</th>
+<th style="width: 102px;">Currency</th>
+<th style="width: 71px;">Amount Due</th>
+</tr>
+<#list invoicelist as invoice><#if invoice.groupedto=="" || invoicegroup??>
+<tr>
+<td>${invoice.tranid}</td>
+<td>${invoice.memo}</td>
+<td style="width: 97px;">${invoice.trandate}</td>
+<td style="width: 102px;">${invoice.duedate}</td>
+<td style="width: 102px;">${invoice.currency}</td>
+<td>${invoice.fxamountremaining?string.number}</td>
+</tr>
+<#assign currency=invoice.currency></#if></#list><#list invoicegrouplist as invoicegrouprecord><#list invoicelist as invoice><#if invoice.groupedto==invoicegrouprecord.invoicegroupnumber>
+<tr>
+<td>${invoice.tranid}<#if invoice.custbody_3805_dunning_procedure !="">*</#if></td>
+<td>${invoice.memo}</td>
+<td style="width: 97px;">${invoice.trandate}</td>
+<td style="width: 102px;">${invoice.duedate}</td>
+<td style="width: 102px;">${invoice.currency}</td>
+<td>${invoice.fxamountremaining?string.number}</td>
+</tr>
+<#assign currency=invoice.currency></#if></#list></#list></tbody>
+</table>
+<p><br /></#if>Please email us at <strong>ar@fictiv.com</strong> to let us know the status of this payment or if you have any questions about the balance due on the account. If you have not sent the payment in full, please send us an email to discuss what you plan to do to settle your account.&nbsp;<br /><br />&nbsp;<br />Thank you very much for your attention to this matter and your continued business.&nbsp;</p>
+<p>Please ignore this reminder if the payment is already made.<br />Sincerely,<br /><strong>Dunning Manager</strong></p>
+<p>&nbsp;</p>

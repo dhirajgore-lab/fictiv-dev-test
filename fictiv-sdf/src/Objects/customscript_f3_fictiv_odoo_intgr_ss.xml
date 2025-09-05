@@ -1,0 +1,127 @@
+<scheduledscript scriptid="customscript_f3_fictiv_odoo_intgr_ss">
+  <description></description>
+  <isinactive>F</isinactive>
+  <name>Fictiv Odoo Integration SO_Step 3</name>
+  <notifyadmins>F</notifyadmins>
+  <notifyemails></notifyemails>
+  <notifyowner>T</notifyowner>
+  <scriptfile>[/SuiteScripts/fictiv-odoo-integratioin/schedule/f3_fictiv_odoo_integration_ss.js]</scriptfile>
+  <scriptcustomfields>
+    <scriptcustomfield scriptid="custscript_f3_odoo_unprocessed_folder_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Odoo Unprocessed Folder Id</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting>COMPANY</setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_f3_odoo_processed_folder_id">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>TEXT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Odoo Processed Folder Id</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete></onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype></selectrecordtype>
+      <setting>COMPANY</setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+    <scriptcustomfield scriptid="custscript_f3_generic_fictive_customer">
+      <accesslevel>2</accesslevel>
+      <applyformatting>F</applyformatting>
+      <checkspelling>F</checkspelling>
+      <defaultchecked>F</defaultchecked>
+      <defaultselection></defaultselection>
+      <defaultvalue></defaultvalue>
+      <description></description>
+      <displayheight></displayheight>
+      <displaytype>NORMAL</displaytype>
+      <displaywidth></displaywidth>
+      <dynamicdefault></dynamicdefault>
+      <fieldtype>SELECT</fieldtype>
+      <help></help>
+      <isformula>F</isformula>
+      <ismandatory>F</ismandatory>
+      <label>Generic Fictiv Customer</label>
+      <linktext></linktext>
+      <maxlength></maxlength>
+      <maxvalue></maxvalue>
+      <minvalue></minvalue>
+      <onparentdelete>SET_NULL</onparentdelete>
+      <searchlevel>2</searchlevel>
+      <selectrecordtype>-2</selectrecordtype>
+      <setting>COMPANY</setting>
+      <storevalue>T</storevalue>
+    </scriptcustomfield>
+  </scriptcustomfields>
+  <scriptdeployments>
+    <scriptdeployment scriptid="customdeploy2">
+      <custscript_f3_generic_fictive_customer></custscript_f3_generic_fictive_customer>
+      <custscript_f3_odoo_processed_folder_id></custscript_f3_odoo_processed_folder_id>
+      <custscript_f3_odoo_unprocessed_folder_id></custscript_f3_odoo_unprocessed_folder_id>
+      <isdeployed>F</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Fictiv Odoo Integration SS 2_Scheduled</title>
+      <recurrence>
+        <daily>
+          <everyxdays>1</everyxdays>
+          <repeat>PT1H</repeat>
+          <startdate>2019-11-07</startdate>
+          <starttime>02:00:00Z</starttime>
+        </daily>
+      </recurrence>
+    </scriptdeployment>
+    <scriptdeployment scriptid="customdeploy_f3_fictiv_odoo_intgr_ss_d">
+      <custscript_f3_generic_fictive_customer>[ACCOUNT_SPECIFIC_VALUE]</custscript_f3_generic_fictive_customer>
+      <custscript_f3_odoo_processed_folder_id></custscript_f3_odoo_processed_folder_id>
+      <custscript_f3_odoo_unprocessed_folder_id></custscript_f3_odoo_unprocessed_folder_id>
+      <isdeployed>T</isdeployed>
+      <loglevel>DEBUG</loglevel>
+      <status>NOTSCHEDULED</status>
+      <title>Fictiv Odoo Integration SS</title>
+      <recurrence>
+        <single>
+          <repeat></repeat>
+          <startdate>2019-10-09</startdate>
+          <starttime>01:00:00Z</starttime>
+        </single>
+      </recurrence>
+    </scriptdeployment>
+  </scriptdeployments>
+</scheduledscript>

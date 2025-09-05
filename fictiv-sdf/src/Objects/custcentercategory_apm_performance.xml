@@ -1,0 +1,13 @@
+<centercategory scriptid="custcentercategory_apm_performance">
+  <center>BASIC</center>
+  <centertab>BASICCENTERCUSTOMIZATION</centertab>
+  <label>Performance (SuiteBundler)</label>
+  <links>
+    <link>
+      <linklabel>Installing from the SuiteApp Marketplace</linklabel>
+      <linkobject>[scriptid=customscript_apm_ah_sl_main.customdeploy_apm_ah_sl_main]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

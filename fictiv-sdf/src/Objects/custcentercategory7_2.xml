@@ -1,0 +1,25 @@
+<centercategory scriptid="custcentercategory7_2">
+  <center>BASIC</center>
+  <centertab>[scriptid=custcentertab17_2]</centertab>
+  <label>View</label>
+  <links>
+    <link>
+      <linklabel>Transactions</linklabel>
+      <linkobject>[scriptid=customscript_avatransactionlist_suitelet.customdeploy_avatransactionlist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Voided Transactions</linklabel>
+      <linkobject>[scriptid=customscriptavavoidedlist_suitlet.customdeploy_avavoidedlist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+    <link>
+      <linklabel>Committed Transactions</linklabel>
+      <linkobject>[scriptid=customscript_avacommittedlist_suitlet.customdeploy_avacommittedlist]</linkobject>
+      <linktasktype>SCRIPT</linktasktype>
+      <shortlist>F</shortlist>
+    </link>
+  </links>
+</centercategory>

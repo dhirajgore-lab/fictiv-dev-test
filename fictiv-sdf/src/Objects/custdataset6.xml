@@ -1,0 +1,548 @@
+<!-- Do not modify the contents of the SDF XML definition structure located under "CDATA" section of this XML, as this may corrupt the Workbook/Dataset data when you deploy the modified object to your NetSuite account. !-->
+<dataset scriptid="custdataset6">
+  <name translate="T">[scriptid=custcollectiontranslations_dataset_6_f217d825175f4d73a2265b.dataset_name_34_2]</name>
+  <dependencies>
+    <dependency>[scriptid=custbody_st_customer_sales_order]</dependency>
+    <dependency>[scriptid=custcollectiontranslations_dataset_6_f217d825175f4d73a2265b.dataset_field_34_1]</dependency>
+  </dependencies>
+  <definition><![CDATA[<root>
+<_T_>dataSet</_T_>
+<id type="null"/>
+<scriptId type="null"/>
+<applicationId type="null"/>
+<version type="string">0.1</version>
+<name>
+  <translationScriptId>custcollectiontranslations_dataset_6_f217d825175f4d73a2265b.dataset_name_34_2</translationScriptId>
+</name>
+<audience>
+  <AudienceItems type="array"/>
+  <isPublic type="boolean">false</isPublic>
+</audience>
+<ownerId>345719</ownerId>
+<description type="null"/>
+<baseRecord>
+  <id>transaction</id>
+  <label>Transaction</label>
+</baseRecord>
+<columns type="array">
+  <_ITEM_>
+    <columnId>1</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>trandate</id>
+      <label>Date</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>trandate</uniqueId>
+    </field>
+    <alias>tranDate</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>11</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>tranid</id>
+      <label>Document Number/ID</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>tranid</uniqueId>
+    </field>
+    <alias>tranid</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>12</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>custbody_st_customer_sales_order</id>
+      <label>Customer Sales Order</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>custbody_st_customer_sales_order</uniqueId>
+    </field>
+    <alias>custbody_st_customer_sales_order</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>9</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>expectedreceiptdate</id>
+      <label>Expected Receipt Date</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.expectedreceiptdate</uniqueId>
+    </field>
+    <alias>expectedreceiptdate</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>16</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>quantityshiprecv</id>
+      <label>Quantity Shipped/Received/Picked Up</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.quantityshiprecv</uniqueId>
+    </field>
+    <alias>quantityshiprecv</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>19</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>rateamount</id>
+      <label>Rate Amount</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.rateamount</uniqueId>
+    </field>
+    <alias>rateamount</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>18</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>debitforeignamount</id>
+      <label>Amount (Debit) (Transaction Currency)</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.debitforeignamount</uniqueId>
+    </field>
+    <alias>debitforeignamount</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>2</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>fullname</id>
+      <label>Full Name</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+          <_ITEM_>
+            <id>item^item</id>
+            <targetRecordType>item</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.item^item.fullname</uniqueId>
+    </field>
+    <alias>itemitemfullName</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>3</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>quantity</id>
+      <label>Quantity</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.quantity</uniqueId>
+    </field>
+    <alias>transactionLinesquantity</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>15</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>ordreceived</id>
+      <label>Order Received</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+          <_ITEM_>
+            <id>transaction</id>
+            <targetRecordType>transaction</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.transaction.ordreceived</uniqueId>
+    </field>
+    <alias>ordreceived</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>4</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>foreignamount</id>
+      <label>Amount (Transaction Currency)</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array">
+          <_ITEM_>
+            <id>transactionlines</id>
+            <targetRecordType>transactionline</targetRecordType>
+          </_ITEM_>
+        </joins>
+      </joinTrail>
+      <uniqueId>transactionlines.foreignamount</uniqueId>
+    </field>
+    <alias>transactionLinesforeignAmount</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>5</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>status</id>
+      <label>Status</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>status</uniqueId>
+    </field>
+    <alias>status</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>6</columnId>
+    <label type="null"/>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>foreigntotal</id>
+      <label>Total Amount (Transaction Currency)</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>foreigntotal</uniqueId>
+    </field>
+    <alias>foreignTotal</alias>
+  </_ITEM_>
+  <_ITEM_>
+    <columnId>7</columnId>
+    <label>
+      <translationScriptId>custcollectiontranslations_dataset_6_f217d825175f4d73a2265b.dataset_field_34_1</translationScriptId>
+    </label>
+    <field>
+      <_T_>fieldReference</_T_>
+      <id>entity</id>
+      <label>Entity</label>
+      <joinTrail>
+        <baseRecord>
+          <id>transaction</id>
+          <label>Transaction</label>
+        </baseRecord>
+        <joins type="array"/>
+      </joinTrail>
+      <uniqueId>entity</uniqueId>
+    </field>
+    <alias>entity</alias>
+  </_ITEM_>
+</columns>
+<criteria>
+  <_T_>condition</_T_>
+  <operator>
+    <code>AND</code>
+  </operator>
+  <children type="array">
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>ANY_OF</code>
+      </operator>
+      <meta>
+        <subType>values</subType>
+        <selectorType>field-values</selectorType>
+      </meta>
+      <expressions type="array">
+        <_ITEM_>
+          <value>
+            <type>KEY</type>
+            <value>PurchOrd</value>
+          </value>
+          <label>Purchase Order</label>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+      </expressions>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>type</id>
+        <label>Type</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array"/>
+        </joinTrail>
+        <uniqueId>type</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>ON_OR_AFTER</code>
+      </operator>
+      <meta>
+        <subType>date-ranges</subType>
+        <selectorType type="null"/>
+      </meta>
+      <expressions type="array">
+        <_ITEM_>
+          <value>
+            <type>DATE_RANGE</type>
+            <dateId>SOTM</dateId>
+            <dateType>END</dateType>
+          </value>
+          <label>start of this month</label>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+      </expressions>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>trandate</id>
+        <label>Date</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array"/>
+        </joinTrail>
+        <uniqueId>trandate</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>IS</code>
+      </operator>
+      <meta>
+        <subType>boolean</subType>
+        <selectorType type="null"/>
+      </meta>
+      <expressions type="array">
+        <_ITEM_>
+          <value>
+            <type>BOOLEAN</type>
+            <value type="boolean">false</value>
+          </value>
+          <label type="null"/>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+      </expressions>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>mainline</id>
+        <label>Main Line</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array">
+            <_ITEM_>
+              <id>transactionlines</id>
+              <targetRecordType>transactionline</targetRecordType>
+            </_ITEM_>
+          </joins>
+        </joinTrail>
+        <uniqueId>transactionlines.mainline</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>IS</code>
+      </operator>
+      <meta>
+        <subType>boolean</subType>
+        <selectorType type="null"/>
+      </meta>
+      <expressions type="array">
+        <_ITEM_>
+          <value>
+            <type>BOOLEAN</type>
+            <value type="boolean">false</value>
+          </value>
+          <label type="null"/>
+          <subType type="null"/>
+          <uiData type="array"/>
+        </_ITEM_>
+      </expressions>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>taxline</id>
+        <label>Tax Line</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array">
+            <_ITEM_>
+              <id>transactionlines</id>
+              <targetRecordType>transactionline</targetRecordType>
+            </_ITEM_>
+          </joins>
+        </joinTrail>
+        <uniqueId>transactionlines.taxline</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+    <_ITEM_>
+      <_T_>filter</_T_>
+      <operator>
+        <code>EMPTY_NOT</code>
+      </operator>
+      <meta>
+        <subType>values</subType>
+        <selectorType>field-values</selectorType>
+      </meta>
+      <expressions type="array"/>
+      <field>
+        <_T_>fieldReference</_T_>
+        <id>quantity</id>
+        <label>Quantity</label>
+        <joinTrail>
+          <baseRecord>
+            <id>transaction</id>
+            <label>Transaction</label>
+          </baseRecord>
+          <joins type="array">
+            <_ITEM_>
+              <id>transactionlines</id>
+              <targetRecordType>transactionline</targetRecordType>
+            </_ITEM_>
+          </joins>
+        </joinTrail>
+        <uniqueId>transactionlines.quantity</uniqueId>
+      </field>
+      <targetFieldContext>
+        <name>IDENTIFIER</name>
+      </targetFieldContext>
+      <fieldStateName>raw</fieldStateName>
+      <caseSensitive type="boolean">false</caseSensitive>
+    </_ITEM_>
+  </children>
+  <meta type="null"/>
+  <field type="null"/>
+  <targetFieldContext>
+    <name>DEFAULT</name>
+  </targetFieldContext>
+  <fieldStateName type="null"/>
+</criteria>
+<formulas type="array"/>
+</root>]]></definition>
+</dataset>

@@ -1,0 +1,67 @@
+<centertab scriptid="custcentertab_atlas_center_tab_ar">
+  <allcustomers>F</allcustomers>
+  <allemployees>F</allemployees>
+  <allpartners>F</allpartners>
+  <allroles>F</allroles>
+  <allvendors>F</allvendors>
+  <audslctrole>[scriptid=customrole_atlas_ff_em_controller]|[scriptid=customrole_atlas_ff_em_sales_ar]</audslctrole>
+  <center>ACCOUNTCENTER</center>
+  <label>A/R</label>
+  <portlets>
+    <portlet scriptid="portlet_666_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_617_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_576_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_575_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_648_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>KPIREPORT</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_594_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>KPIMETER</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_647_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SNAPSHOTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_646_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_574_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>SEARCHRESULTS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_660_4531030_674">
+      <isportletshown>F</isportletshown>
+      <portlet>REMINDERS</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+    <portlet scriptid="portlet_749_4577637_918">
+      <isportletshown>T</isportletshown>
+      <portlet>SCRIPTPORTLET</portlet>
+      <portletcolumn>1</portletcolumn>
+    </portlet>
+  </portlets>
+</centertab>
