@@ -1,0 +1,387 @@
+name: Deploy Differences to NetSuite Sandbox
+
+# Trigger the workflow on:
+# 1. Push to specific branch (change 'sandbox-deploy' to your branch name)
+# 2. Manual trigger from GitHub Actions tab
+on:
+  push:
+    branches: 
+      - sandbox-deploy      # Change this to your branch name
+      - staging             # Add more branches if needed
+  workflow_dispatch:        # Allows manual trigger
+    inputs:
+      branch:
+        description: 'Branch to deploy (leave empty to use current branch)'
+        required: false
+        default: ''
+      compare_branch:
+        description: 'Branch to compare against (default: main)'
+        required: false
+        default: 'main'
+      deploy_message:
+        description: 'Deployment message/notes'
+        required: false
+        default: 'Manual deployment to sandbox'
+      force_full_deploy:
+        description: 'Deploy everything instead of just differences'
+        type: boolean
+        required: false
+        default: false
+
+jobs:
+  deploy-to-sandbox:
+    runs-on: ubuntu-latest
+    
+    steps:
+    # Step 1: Checkout the code with full history
+    - name: 🔄 Checkout Repository
+      uses: actions/checkout@v4
+      with:
+        # Use input branch if provided, otherwise use current branch
+        ref: ${{ github.event.inputs.branch || github.ref }}
+        fetch-depth: 0  # Fetch full history for diff comparison
+    
+    # Step 2: Setup Node.js environment
+    - name: 🟢 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+    
+    # Step 3: Identify Changed Files
+    - name: 🔍 Identify Changed Files
+      id: changes
+      run: |
+        COMPARE_BRANCH="${{ github.event.inputs.compare_branch || 'main' }}"
+        CURRENT_BRANCH="${{ github.event.inputs.branch || github.ref_name }}"
+        FORCE_FULL="${{ github.event.inputs.force_full_deploy || 'false' }}"
+        
+        echo "🔍 Comparing $CURRENT_BRANCH with $COMPARE_BRANCH"
+        
+        if [[ "$FORCE_FULL" == "true" ]]; then
+          echo "⚠️ Force full deployment requested - deploying all files"
+          echo "deploy_type=full" >> $GITHUB_OUTPUT
+          echo "changed_files=" >> $GITHUB_OUTPUT
+        else
+          # Get list of changed files
+          echo "📋 Getting changed files..."
+          git fetch origin $COMPARE_BRANCH
+          
+          # Get changed files between branches
+          CHANGED_FILES=$(git diff --name-only origin/$COMPARE_BRANCH...HEAD)
+          
+          if [ -z "$CHANGED_FILES" ]; then
+            echo "ℹ️ No changes detected between $COMPARE_BRANCH and $CURRENT_BRANCH"
+            echo "deploy_type=none" >> $GITHUB_OUTPUT
+            echo "changed_files=" >> $GITHUB_OUTPUT
+          else
+            echo "📁 Changed files detected:"
+            echo "$CHANGED_FILES"
+            
+            # Filter for NetSuite-related files only
+            NS_CHANGED_FILES=$(echo "$CHANGED_FILES" | grep -E '\.(js|xml|html|css|json|csv)$|src/' || true)
+            
+            if [ -z "$NS_CHANGED_FILES" ]; then
+              echo "ℹ️ No NetSuite-related files changed"
+              echo "deploy_type=none" >> $GITHUB_OUTPUT
+              echo "changed_files=" >> $GITHUB_OUTPUT
+            else
+              echo "📋 NetSuite files to deploy:"
+              echo "$NS_CHANGED_FILES"
+              echo "deploy_type=partial" >> $GITHUB_OUTPUT
+              
+              # Save changed files for later steps (escape newlines)
+              echo "changed_files<<EOF" >> $GITHUB_OUTPUT
+              echo "$NS_CHANGED_FILES" >> $GITHUB_OUTPUT
+              echo "EOF" >> $GITHUB_OUTPUT
+            fi
+          fi
+        fi
+
+    # Step 4: Install SuiteCloud CLI
+    - name: 📦 Install SuiteCloud CLI
+      run: |
+        echo "Installing SuiteCloud CLI..."
+        npm install -g @oracle/suitecloud-cli
+        echo "SuiteCloud CLI version:"
+        suitecloud --version
+    
+    # Step 5: Setup NetSuite Authentication
+    - name: 🔐 Setup NetSuite Authentication  
+      if: steps.changes.outputs.deploy_type != 'none'
+      run: |
+        echo "Setting up NetSuite authentication for sandbox..."
+        suitecloud account:setup \
+          --authid sandbox \
+          --account "${{ secrets.SANDBOX_ACCOUNT_ID }}" \
+          --tokenid "${{ secrets.SANDBOX_TOKEN_ID }}" \
+          --tokensecret "${{ secrets.SANDBOX_TOKEN_SECRET }}" \
+          --consumerkey "${{ secrets.SANDBOX_CONSUMER_KEY }}" \
+          --consumersecret "${{ secrets.SANDBOX_CONSUMER_SECRET }}" \
+          --savetoken
+        echo "✅ Authentication setup completed"
+    
+    # Step 6: Create Filtered Deployment Project
+    - name: 🎯 Create Filtered Deployment Project
+      id: filter-project
+      if: steps.changes.outputs.deploy_type == 'partial'
+      run: |
+        echo "🎯 Creating filtered deployment with only changed files..."
+        
+        # Create temporary deployment directory
+        mkdir -p temp-deploy/src
+        
+        # Copy changed files to temporary directory
+        CHANGED_FILES="${{ steps.changes.outputs.changed_files }}"
+        
+        echo "📁 Processing changed files:"
+        while IFS= read -r file; do
+          if [ -n "$file" ] && [ -f "$file" ]; then
+            echo "  ✓ Including: $file"
+            
+            # Create directory structure and copy file
+            mkdir -p "temp-deploy/$(dirname "$file")"
+            cp "$file" "temp-deploy/$file"
+            
+            # For SuiteScript files, check if there's a corresponding XML deployment file
+            if [[ "$file" == *"/SuiteScripts/"*.js ]]; then
+              BASENAME=$(basename "$file" .js)
+              XML_FILE="src/Objects/customscript_${BASENAME}.xml"
+              
+              if [ -f "$XML_FILE" ]; then
+                echo "  ✓ Including related: $XML_FILE"
+                mkdir -p "temp-deploy/$(dirname "$XML_FILE")"
+                cp "$XML_FILE" "temp-deploy/$XML_FILE"
+              fi
+            fi
+            
+            # For Object XML files, check if there are related SuiteScript files
+            if [[ "$file" == *"/Objects/"*"customscript_"*.xml ]]; then
+              # Extract script ID from XML to find related JS files
+              SCRIPT_ID=$(grep -o 'scriptfile>\[.*\]' "$file" | sed 's/scriptfile>\[\///g' | sed 's/\]//g' || echo "")
+              if [ -n "$SCRIPT_ID" ]; then
+                JS_FILE="src/FileCabinet/$SCRIPT_ID"
+                if [ -f "$JS_FILE" ]; then
+                  echo "  ✓ Including related: $JS_FILE" 
+                  mkdir -p "temp-deploy/$(dirname "$JS_FILE")"
+                  cp "$JS_FILE" "temp-deploy/$JS_FILE"
+                fi
+              fi
+            fi
+          fi
+        done <<< "$CHANGED_FILES"
+        
+        # Copy essential project files
+        if [ -f "deploy.xml" ]; then
+          cp "deploy.xml" "temp-deploy/"
+        fi
+        
+        if [ -f "manifest.xml" ]; then
+          cp "manifest.xml" "temp-deploy/"
+        fi
+        
+        # Create deploy.xml if it doesn't exist
+        if [ ! -f "temp-deploy/deploy.xml" ]; then
+          cat > temp-deploy/deploy.xml << 'EOF'
+        <deploy>
+            <configuration>
+                <path>~/NetSuite Projects/temp-deploy</path>
+            </configuration>
+        </deploy>
+        EOF
+        fi
+        
+        # Create manifest.xml if it doesn't exist
+        if [ ! -f "temp-deploy/manifest.xml" ]; then
+          cat > temp-deploy/manifest.xml << 'EOF'
+        <manifest projecttype="ACCOUNTCUSTOMIZATION">
+            <projectname>Filtered Deployment</projectname>
+            <frameworkversion>1.0</frameworkversion>
+        </manifest>
+        EOF
+        fi
+        
+        echo "✅ Filtered deployment project created in temp-deploy/"
+        
+        # List files in filtered deployment
+        echo "📋 Files included in filtered deployment:"
+        find temp-deploy -type f | sort
+        
+        echo "deployment_dir=temp-deploy" >> $GITHUB_OUTPUT
+    
+    # Step 7: Validate SDF Project
+    - name: ✅ Validate SDF Project
+      if: steps.changes.outputs.deploy_type != 'none'
+      run: |
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "partial" ]; then
+          echo "Validating filtered deployment project..."
+          cd temp-deploy
+          suitecloud project:validate
+          cd ..
+        else
+          echo "Validating full project..."
+          suitecloud project:validate
+        fi
+        echo "✅ Project validation completed"
+    
+    # Step 8: Generate Deployment Summary
+    - name: 📋 Generate Deployment Summary
+      if: steps.changes.outputs.deploy_type != 'none'
+      run: |
+        echo "## Deployment Information" > deployment_summary.md
+        echo "- **Branch:** ${{ github.ref_name }}" >> deployment_summary.md
+        echo "- **Compared with:** ${{ github.event.inputs.compare_branch || 'main' }}" >> deployment_summary.md
+        echo "- **Deployment Type:** ${{ steps.changes.outputs.deploy_type }}" >> deployment_summary.md
+        echo "- **Commit:** ${{ github.sha }}" >> deployment_summary.md
+        echo "- **Triggered by:** ${{ github.actor }}" >> deployment_summary.md
+        echo "- **Timestamp:** $(date -u)" >> deployment_summary.md
+        echo "- **Message:** ${{ github.event.inputs.deploy_message || 'Automated deployment' }}" >> deployment_summary.md
+        echo "" >> deployment_summary.md
+        
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "partial" ]; then
+          echo "### Changed Files to Deploy:" >> deployment_summary.md
+          echo '```' >> deployment_summary.md
+          echo "${{ steps.changes.outputs.changed_files }}" >> deployment_summary.md
+          echo '```' >> deployment_summary.md
+          echo "" >> deployment_summary.md
+        fi
+        
+        # Get recent commits for this deployment
+        echo "### Recent Changes:" >> deployment_summary.md
+        COMPARE_BRANCH="${{ github.event.inputs.compare_branch || 'main' }}"
+        git log --oneline origin/$COMPARE_BRANCH..HEAD >> deployment_summary.md
+        
+        echo "📋 Deployment summary generated"
+        cat deployment_summary.md
+    
+    # Step 9: Deploy to NetSuite Sandbox
+    - name: 🚀 Deploy to NetSuite Sandbox
+      if: steps.changes.outputs.deploy_type != 'none'
+      run: |
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "none" ]; then
+          echo "ℹ️ No changes to deploy - skipping deployment"
+          exit 0
+        fi
+        
+        echo "🚀 Starting deployment to NetSuite Sandbox..."
+        echo "Account: ${{ secrets.SANDBOX_ACCOUNT_ID }}"
+        echo "Deployment Type: ${{ steps.changes.outputs.deploy_type }}"
+        
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "partial" ]; then
+          echo "📁 Deploying only changed files from temp-deploy directory..."
+          cd temp-deploy
+          
+          # Deploy with account-specific values as warnings
+          suitecloud project:deploy \
+            --authid sandbox \
+            --account-specific-values WARNING \
+            --log-level INFO
+          
+          cd ..
+        else
+          echo "📁 Deploying full project..."
+          # Deploy with account-specific values as warnings
+          suitecloud project:deploy \
+            --authid sandbox \
+            --account-specific-values WARNING \
+            --log-level INFO
+        fi
+        
+        echo "✅ Deployment to sandbox completed successfully!"
+    
+    # Step 10: Post-deployment verification
+    - name: 🔍 Post-deployment Verification
+      if: steps.changes.outputs.deploy_type != 'none'
+      run: |
+        echo "Running post-deployment checks..."
+        
+        # List deployed objects to verify
+        echo "📋 Listing current objects in sandbox:"
+        suitecloud object:list --authid sandbox > deployed_objects.txt
+        
+        # Show summary of deployed objects
+        echo "📊 Deployment completed. Object count:"
+        wc -l deployed_objects.txt
+        
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "partial" ]; then
+          echo "📋 Partial deployment completed with ${{ steps.changes.outputs.changed_files | wc -l }} changed files"
+        fi
+        
+        echo "✅ Post-deployment verification completed"
+    
+    # Step 11: Create deployment artifact (logs and summaries)
+    - name: 📤 Upload Deployment Artifacts
+      uses: actions/upload-artifact@v4
+      if: always() && steps.changes.outputs.deploy_type != 'none'
+      with:
+        name: deployment-logs-${{ github.run_number }}
+        path: |
+          deployment_summary.md
+          deployed_objects.txt
+          temp-deploy/
+        retention-days: 30
+    
+    # Step 12: Handle no changes scenario
+    - name: ℹ️ No Changes Detected
+      if: steps.changes.outputs.deploy_type == 'none'
+      run: |
+        echo "ℹ️ No changes detected between ${{ github.event.inputs.compare_branch || 'main' }} and ${{ github.ref_name }}"
+        echo "🔍 Comparison details:"
+        echo "  - Source branch: ${{ github.ref_name }}"
+        echo "  - Target branch: ${{ github.event.inputs.compare_branch || 'main' }}"
+        echo "  - Commit SHA: ${{ github.sha }}"
+        echo ""
+        echo "💡 To force a full deployment, use the 'Run workflow' button and check 'Deploy everything'"
+        echo "✅ Workflow completed - no deployment necessary"
+    
+    # Step 13: Notify on success
+    - name: ✅ Deployment Success Notification
+      if: success() && steps.changes.outputs.deploy_type != 'none'
+      run: |
+        echo "🎉 Deployment completed successfully!"
+        echo "✅ Branch '${{ github.ref_name }}' changes deployed to NetSuite Sandbox"
+        echo "📋 Deployment Type: ${{ steps.changes.outputs.deploy_type }}"
+        
+        if [ "${{ steps.changes.outputs.deploy_type }}" == "partial" ]; then
+          CHANGED_COUNT=$(echo "${{ steps.changes.outputs.changed_files }}" | wc -l)
+          echo "📁 Files deployed: $CHANGED_COUNT changed files only"
+        else
+          echo "📁 Full project deployment completed"
+        fi
+        
+        echo "📋 Check the 'Actions' tab for detailed logs and artifacts"
+    
+    # Step 14: Notify on failure
+    - name: ❌ Deployment Failure Notification
+      if: failure()
+      run: |
+        echo "❌ Deployment failed!"
+        echo "🔍 Check the logs above for error details"
+        echo "💡 Common issues:"
+        echo "   - Authentication problems (check secrets)"
+        echo "   - SDF project validation errors"
+        echo "   - NetSuite account permissions"
+        echo "   - Network connectivity issues"
+        echo "   - File dependency issues in partial deployments"
+        echo ""
+        echo "🔧 Troubleshooting tips:"
+        echo "   - For partial deployment issues, try force full deployment"
+        echo "   - Check if related files (JS + XML) are both included"
+        echo "   - Verify all changed files are valid NetSuite objects"
+
+# Optional: Add Slack notification (uncomment and configure if you have Slack integration)
+  # notify-slack:
+  #   needs: deploy-to-sandbox
+  #   runs-on: ubuntu-latest
+  #   if: always()
+  #   steps:
+  #   - name: Notify Slack
+  #     uses: 8398a7/action-slack@v3
+  #     with:
+  #       status: ${{ needs.deploy-to-sandbox.result }}
+  #       text: |
+  #         NetSuite Sandbox Deployment: ${{ needs.deploy-to-sandbox.result }}
+  #         Branch: ${{ github.ref_name }}
+  #         Triggered by: ${{ github.actor }}
+  #     env:
+  #       SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
